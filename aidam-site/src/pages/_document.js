@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang='en'>
       <Head>
         <link rel='apple-touch-icon' href='/icon-384x384.png'></link>
-        <link rel='icon' href='/icon-384x384.png' />
+        <link rel='icon' href='/aidamLogo4k.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'

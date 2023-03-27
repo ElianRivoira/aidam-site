@@ -5,8 +5,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        aidam: '#0C0992',
-        aidam80: 'rgba(12, 9, 146, 0.8)',
         grey1: '#F5F5F5',
         grey2: '#F0F0F0',
         grey3: '#E1E1E1',
@@ -24,6 +22,7 @@ module.exports = {
         aidam80: 'rgba(12, 9, 146, 0.8)',
         aidam70: 'rgba(12, 9, 146, 0.7)',
         aidamNav: 'rgba(31, 27, 183, 0.64)',
+        aidamLightBlue: '#6BCAE2',
         therapists: '#0B7EBE',
         redLogout: '#B81212',
       },
