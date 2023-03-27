@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -40,6 +41,11 @@ module.exports = {
         xl1: ['24px', '20px'],
         xl2: ['24px', '30px'],
         '4.5xl': ['40px', '47px'],
+      },
+      fontFamily: {
+        openSans: ["Open Sans", ...fontFamily.sans],
+        quickSand: ["Quicksand", ...fontFamily.sans],
+        libreBaskerville: ["Libre Baskerville", ...fontFamily.serif],
       },
       boxShadow: {
         card: '0px 4px 5px rgba(0, 0, 0, 0.25)',
