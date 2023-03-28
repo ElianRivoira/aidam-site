@@ -23,6 +23,7 @@ module.exports = {
         aidam70: 'rgba(12, 9, 146, 0.7)',
         aidamNav: 'rgba(31, 27, 183, 0.64)',
         aidamLightBlue: '#6BCAE2',
+        aidamBlue: '#2e3192',
         therapists: '#0B7EBE',
         redLogout: '#B81212',
       },

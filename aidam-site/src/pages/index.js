@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar';
 import Head from 'next/head';
 
 export default function Home() {
@@ -6,7 +7,9 @@ export default function Home() {
       <Head>
         <title>AIDAM - Inicio</title>
       </Head>
-      <main className='font-quickSand'>aaaaaaaaaaaaaaaa</main>
+      <main>
+        <Navbar />
+      </main>
     </>
   );
 }

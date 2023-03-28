@@ -1,0 +1,78 @@
+.gradient {
+  background: linear-gradient(90deg, white 15%, #6BCAE2 40%);
+}
+
+.navbarButton {
+  position: relative;
+  flex-direction: column-reverse;
+  padding-bottom: 6px;
+  text-decoration: none;
+}
+
+.navbarButton:hover {
+  color: white;
+}
+
+.navbarButton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  transform: translateX(-50%) scaleX(0);
+  background-color: #FFF;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+.navbarButton:hover::after {
+  width: 100%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 20px;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 20;
+  background: #2e3192;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hamburger span:nth-child(2) {
+  width: 30px;
+}
+
+.hamburger span:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
