@@ -13,7 +13,7 @@ export default function Document() {
           crossOrigin='anonymous'
         />
         <link
-          href='https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&family=Quicksand&display=swap'
+          href='https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@400;500&family=Quicksand&display=swap'
           rel='stylesheet'
         ></link>
         <meta name='theme-color' content='#fff' />
