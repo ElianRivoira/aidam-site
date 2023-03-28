@@ -1,3 +1,4 @@
+import MakeConsult from '@/components/MakeConsult';
 import Navbar from '@/components/Navbar';
 import Head from 'next/head';
 
@@ -9,6 +10,7 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
+        <MakeConsult />
       </main>
     </>
   );
