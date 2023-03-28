@@ -8,7 +8,7 @@ import styles from '@/styles/Navbar.module.css';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
+  // smooth transition to white background pending
   return (
     <nav className={`px-8 ${styles.gradient} h-[93px] flex justify-center`}>
       <div className='max-w-7xl w-full flex justify-between h-full'>

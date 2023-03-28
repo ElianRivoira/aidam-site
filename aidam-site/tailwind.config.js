@@ -6,11 +6,11 @@ module.exports = {
     extend: {
       colors: {
         grey1: '#F5F5F5',
-        grey2: '#F0F0F0',
-        grey3: '#E1E1E1',
+        grey2: '#E2E2E2',
+        grey3: '#E4E4E0',
         grey4: '#C8C8C8',
         grey5: '#AFAFAF',
-        grey6: '#8C8C8C',
+        grey6: '#9EA0A4',
         grey7: '#6E6E6E',
         grey8: '#505050',
         exito: '#00A541',
@@ -56,9 +56,16 @@ module.exports = {
       height: {
         7.5: '30px',
         17.5: '70px',
+        38: '150px',
       },
       margin: {
         5.5: '22px',
+      },
+      padding: {
+        17.5: '70px',
+      },
+      screens: {
+        'sd': '748px',
       },
     },
   },
