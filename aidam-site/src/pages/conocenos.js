@@ -72,9 +72,7 @@ const Faq = () => {
           {questions.slice(0, 4).map((q) => (
             <div
               key={q.id}
-              className={`p-4 mb-2 cursor-pointer ${
-                q.id === activeQuestion ? '' : ''
-              }`}
+              className={`p-4 mb-2 cursor-pointer`}
               onClick={() => handleQuestionClick(q.id)}
             >
               {' '}
@@ -84,11 +82,11 @@ const Faq = () => {
                     <Image src={menos} />
                   </div>
                 ) : (
-                  <div className='flex w-6 h-6 rounded-full border hover:border-[#b1b3e7] hover:bg-[#b1b3e7] justify-center mr-2 duration-300 min-w-0 flex-shrink-0'>
+                  <div className='flex w-6 h-6 rounded-full border hover:border-[#b1b3e7] hover:bg-[#b1b3e7] justify-center mr-2 min-w-0 flex-shrink-0'>
                     <Image src={mas} />
                   </div>
                 )}
-                <h3 className='font-semibold text-lg font-quickSand hover:text-[#b1b3e7] duration-300'>
+                <h3 className='font-semibold text-lg font-quickSand hover:text-[#b1b3e7]'>
                   {q.question}
                 </h3>
               </div>
