@@ -6,24 +6,48 @@
 
 @media(min-width: 640px) {
   .question0 {
-    transform: translate(-140px, 0px);
+    margin-left: -130px
   }
   .question1 {
-    transform: translate(-90px, 0px);
+    margin-left: -80px
   }
   .question2 {
-    transform: translate(-50px, 0px);
+    margin-left: -30px
   }
   .question3 {
-    transform: translate(-10px, 0px);
+    margin-left: 10px
   }
   .question4 {
-    transform: translate(-50px, 0px);
+    margin-left: -30px
   }
   .question5 {
-    transform: translate(-90px, 0px);
+    margin-left: -80px
   }
   .question6 {
-    transform: translate(-140px, 0px);
+    margin-left: -130px
+  }
+}
+
+@media(min-width: 768px) {
+  .question0 {
+    margin-left: -90px
+  }
+  .question1 {
+    margin-left: -40px
+  }
+  .question2 {
+    margin-left: 10px
+  }
+  .question3 {
+    margin-left: 50px
+  }
+  .question4 {
+    margin-left: 10px
+  }
+  .question5 {
+    margin-left: -40px
+  }
+  .question6 {
+    margin-left: -90px
   }
 }

@@ -81,7 +81,7 @@ const Faq = ({ customQuestions }) => {
         <>
           <div className='bg-[#202266] px-8 py-16'>
             <div className='flex justify-center items-center'>
-              <Image src={signoPregunta} className='w-24 h24' />
+              <Image src={signoPregunta} alt='pregunta' className='w-24 h24' />
               <h1 className='text-3xl text-white font-libreBaskerville ml-4 w-min md:w-fit'>
                 Preguntas Frecuentes
               </h1>
