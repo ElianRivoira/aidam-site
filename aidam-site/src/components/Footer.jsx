@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='flex flex-col'>
       <div className='md:flex md:flex-row flex flex-col justify-center items-center px-12 pt-12 pb-7'>
         <div className='md:mr-10 md:mb-0 mb-8'>
-          <Image src={aidam} />
+          <Image src={aidam} alt='aidam' />
         </div>
         <div className='md:px-5 md:w-[800px] w-full h-64 md:mr-10 md:mb-0 mb-8'>
           <MapContainer />
@@ -22,20 +22,20 @@ const Footer = () => {
           </div>
           <div className='flex flex-col'>
             <div className='flex'>
-              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 mb-2'>
-                <Image src={wsp} />
+              <div className='font-quickSand flex h-8 w-8 bg-slate-500 rounded-full justify-center mr-1.5 mb-2'>
+                <Image src={wsp} alt='wsp' />
               </div>
               <p className='text-aidamBlue'>+54 9 2616 22-1750</p>
             </div>
             <div className='flex'>
-              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 mb-2'>
-                <Image src={mail} />
+              <div className='font-quickSand flex h-8 w-8 bg-slate-500 rounded-full justify-center mr-1.5 mb-2'>
+                <Image src={mail} alt='email' />
               </div>
               <p className='text-aidamBlue'>aidam@edu.com.ar</p>
             </div>
             <div className='flex'>
-              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 flex-shrink-0 mb-6'>
-                <Image src={direccion} />
+              <div className='font-quickSand flex h-8 w-8 bg-slate-500 rounded-full justify-center mr-1.5 flex-shrink-0 mb-6'>
+                <Image src={direccion} alt='adress' />
               </div>
               <p className='text-aidamBlue'>Patricias Mendocinas 1433</p>
             </div>

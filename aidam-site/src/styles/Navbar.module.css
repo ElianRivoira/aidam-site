@@ -1,5 +1,24 @@
-.gradient {
-  background: linear-gradient(90deg, white 15%, #6BCAE2 40%);
+ .gradient {
+  background: linear-gradient(90deg, white 60%, #202266 60%);
+}
+
+.triangleBottom {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-top: 50px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 100px solid #202266;
+  transform: translate(1px, 43px);
+}
+.triangleTop {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-top: 0px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid #202266;
+  transform: translate(1px, -50px);
 }
 
 .navbarButton {
@@ -10,7 +29,7 @@
 }
 
 .navbarButton:hover {
-  color: white;
+  color: #b1b3e7;
 }
 
 .navbarButton::after {
@@ -21,7 +40,7 @@
   width: 0;
   height: 3px;
   transform: translateX(-50%) scaleX(0);
-  background-color: #FFF;
+  background-color: #b1b3e7;
   transition: transform 0.2s ease-in-out;
   transform-origin: center;
 }
@@ -36,12 +55,14 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: #202266;
+  padding-right: 20px;
 }
 
 .hamburger {
   display: inline-block;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 15px 0px;
   background: none;
   border: none;
 }
@@ -52,8 +73,8 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  z-index: 20;
-  background: #2e3192;
+  z-index: 50;
+  background: white;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -67,6 +88,7 @@
 
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
+  background-color: black;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -75,4 +97,5 @@
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -7px);
+  background-color: black;
 }
