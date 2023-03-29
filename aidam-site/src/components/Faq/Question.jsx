@@ -23,12 +23,12 @@ const Question = ({q, activeQuestion, handleQuestionClick, custom, clas}) => {
             <Image src={mas} alt='mas' />
           </div>
         )}
-        <h3 className={`font-normal text-lb ${custom ? 'font-openSans font-medium text-xb' : 'font-libreBaskerville'} hover:text-aidamHover`}>
+        <h3 className={`font-normal text-lb ${custom ? useMediaQuery(883) ? 'font-openSans font-medium text-ln' : 'font-openSans font-medium text-xb' : 'font-libreBaskerville'} hover:text-aidamHover`}>
           {q.question}
         </h3>
       </div>
       <p
-        className={`font-quickSand text-lg ${custom ? 'font-normal' : ''}`}
+        className={`font-quickSand text-lg ${custom ? 'font-normal bg-aidamBlue text-white rounded-md px-3' : ''}`}
         style={{
           maxHeight: q.id === activeQuestion ? '1000px' : '0',
           transition: `max-height ${
