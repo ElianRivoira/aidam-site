@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import Navbar from '@/components/Navbar';
 import styles from '../styles/Modelo-vital.module.css';
@@ -11,71 +12,76 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 
 const modeloAidam = () => {
   return (
-    <main className='min-h-screen'>
-      <Navbar />
-      <div
-        className={`${styles.divImage} text-center text-white font-libreBaskerville text-4.5xl px-8 py-[18%]`}
-      >
-        Modelo Aidam
-      </div>
-      <div
-        className={`${styles.gradient} bg-aidamBlue text-white py-[8%] px-8 flex justify-center`}
-      >
-        <div className='text-center w-full sm:w-1/2 mx-2'>
-          <h1 className='font-libreBaskerville text-4.5xl mb-2'>
-            ¿Cómo funciona nuestro modelo aidam?
-          </h1>
-          <p className='font-quickSand text-lz'>
-            Desarrollamos un modelo exclusivo de atención global que garantiza a
-            cada concurrente un programa individual adaptado a sus necesidades y
-            requerimientos, seguimiento profesional permanente y la máxima
-            contención para que pueda potenciar su proyecto de vida.
-          </p>
+    <>
+      <Head>
+        <title>MODELO AIDAM - Centro Aidam</title>
+      </Head>
+      <main className='min-h-screen'>
+        <Navbar />
+        <div
+          className={`${styles.divImage} text-center text-white font-libreBaskerville text-4.5xl px-8 py-[18%] mt-23`}
+        >
+          Modelo Aidam
         </div>
-      </div>
-      <div className='my-[3%] relative sm:flex lg:justify-center'>
-        {!useMediaQuery(1024) ? (
-          <div className='ml-20 2xl:ml-44 flex'>
-            <div
-              className={`rounded-full border-[35px] mb-3 sm:mb-0 border-aidamBlue h-[450px] w-[450px] overflow-hidden ${
-                useMediaQuery(768) ? 'relative -left-20' : ''
-              } flex-shrink-0`}
-            >
-              <Image
-                src={ninoPreescolar}
-                alt='imagen circular'
-                width={450}
-                className=''
-              />
-            </div>
-            <div className='px-8 lg:pl-10 w-fit sm:px-0 sm:flex sm:flex-col sm:justify-center'>
-              <Faq customQuestions={questions} />
-            </div>
+        <div
+          className={`${styles.gradient} bg-aidamBlue text-white py-[8%] px-8 flex justify-center`}
+        >
+          <div className='text-center w-full sm:w-1/2 mx-2'>
+            <h1 className='font-libreBaskerville text-4.5xl mb-2'>
+              ¿Cómo funciona nuestro modelo aidam?
+            </h1>
+            <p className='font-quickSand text-lz'>
+              Desarrollamos un modelo exclusivo de atención global que garantiza
+              a cada concurrente un programa individual adaptado a sus
+              necesidades y requerimientos, seguimiento profesional permanente y
+              la máxima contención para que pueda potenciar su proyecto de vida.
+            </p>
           </div>
-        ) : (
-          <>
-            <div
-              className={`rounded-full border-[35px] mb-3 sm:mb-0 border-aidamBlue h-[450px] w-[450px] overflow-hidden ${
-                useMediaQuery(768) ? 'relative -left-20' : ''
-              } flex-shrink-0`}
-            >
-              <Image
-                src={ninoPreescolar}
-                alt='imagen circular'
-                width={450}
-                className=''
-              />
+        </div>
+        <div className='my-[3%] relative sm:flex lg:justify-center'>
+          {!useMediaQuery(1024) ? (
+            <div className='ml-20 2xl:ml-44 flex'>
+              <div
+                className={`rounded-full border-[35px] mb-3 sm:mb-0 border-aidamBlue h-[450px] w-[450px] overflow-hidden ${
+                  useMediaQuery(768) ? 'relative -left-20' : ''
+                } flex-shrink-0`}
+              >
+                <Image
+                  src={ninoPreescolar}
+                  alt='imagen circular'
+                  width={450}
+                  className=''
+                />
+              </div>
+              <div className='px-8 lg:pl-10 w-fit sm:px-0 sm:flex sm:flex-col sm:justify-center'>
+                <Faq customQuestions={questions} />
+              </div>
             </div>
-            <div className='px-8 md:pl-10 w-fit sm:px-0 sm:flex sm:flex-col sm:justify-center'>
-              <Faq customQuestions={questions} />
-            </div>
-          </>
-        )}
-      </div>
-      <Faq />
-      <MakeConsult />
-      <Footer />
-    </main>
+          ) : (
+            <>
+              <div
+                className={`rounded-full border-[35px] mb-3 sm:mb-0 border-aidamBlue h-[450px] w-[450px] overflow-hidden ${
+                  useMediaQuery(768) ? 'relative -left-20' : ''
+                } flex-shrink-0`}
+              >
+                <Image
+                  src={ninoPreescolar}
+                  alt='imagen circular'
+                  width={450}
+                  className=''
+                />
+              </div>
+              <div className='px-8 md:pl-10 w-fit sm:px-0 sm:flex sm:flex-col sm:justify-center'>
+                <Faq customQuestions={questions} />
+              </div>
+            </>
+          )}
+        </div>
+        <Faq />
+        <MakeConsult />
+        <Footer />
+      </main>
+    </>
   );
 };
 
