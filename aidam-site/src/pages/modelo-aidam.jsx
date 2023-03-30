@@ -14,7 +14,7 @@ const modeloAidam = () => {
     <main className='min-h-screen'>
       <Navbar />
       <div
-        className={`${styles.divImage} text-center text-white font-libreBaskerville text-4.5xl px-8 py-[18%] relative z-10`}
+        className={`${styles.divImage} text-center text-white font-libreBaskerville text-4.5xl px-8 py-[18%]`}
       >
         Modelo Aidam
       </div>
