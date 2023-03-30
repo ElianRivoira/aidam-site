@@ -10,7 +10,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   // smooth transition to white background pending
   return (
-    <nav className={`pl-8 ${styles.gradient} h-[93px] flex justify-center fixed z-10 w-full`}>
+    <nav className={`pl-8 ${styles.gradient} h-[93px] flex justify-center fixed z-10 top-0 w-full`}>
       <div className='max-w-7xl w-full flex h-full justify-between'>
         <div className='flex !w-2/3'>
           <div className='flex items-center relative lg:!w-[197px]'>
