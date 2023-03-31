@@ -32,7 +32,7 @@ const MakeConsult = () => {
         <input type='tel' name='phone' className='h-12 border border-grey2 text-grey6 text-lb rounded-md px-4 outline-none focus:border-grey6' placeholder='Teléfono*'/>
         <input type='email' name='email' className='h-12 border border-grey2 text-grey6 text-lb rounded-md px-4 outline-none focus:border-grey6' placeholder='Email*'/>
         <textarea type='text' name='consult' className='h-38 border border-grey2 text-grey6 text-lb rounded-md px-4 py-2 outline-none focus:border-grey6 resize-none' placeholder='Consulta'/>
-        <button type='submit' className='h-11 w-28 flex items-center rounded-md self-center px-7 py-3 border border-white font-openSans font-semibold text-lg text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue'>Enviar</button>
+        <button type='submit' className='h-11 w-28 flex items-center rounded-md self-center px-7 py-3 border border-white font-openSans font-semibold text-lg text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'>Enviar</button>
       </form>
     </div>
   );

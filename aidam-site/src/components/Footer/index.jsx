@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import MapContainer from './MapContainer';
-import aidam from '../assets/icons/aidamTexto.svg';
-import wsp from '../assets/icons/wsp.svg';
-import direccion from '../assets/icons/direccion.svg';
-import mail from '../assets/icons/mail.svg';
+import aidam from '@/assets/icons/aidamTexto.svg';
+import wsp from '@/assets/icons/wsp.svg';
+import direccion from '@/assets/icons/direccion.svg';
+import mail from '@/assets/icons/mail.svg';
 
 const Footer = () => {
   return (
@@ -40,7 +40,7 @@ const Footer = () => {
               <p className='text-aidamBlue'>Patricias Mendocinas 1433</p>
             </div>
           </div>
-          <button className='h-16 w-52 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue'>
+          <button className='h-16 w-52 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'>
             TRABAJÁ CON NOSOTROS
           </button>
         </div>

@@ -1,8 +1,24 @@
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+
 import Faq from '@/components/Faq';
 import Footer from '@/components/Footer';
 import MakeConsult from '@/components/MakeConsult';
 import Navbar from '@/components/Navbar';
-import Head from 'next/head';
+import styles from '../styles/Inicio.module.css';
+import FlipCard from '@/components/Inicio/FlipCard';
+import useMediaQuery from '@/hooks/useMediaQuery';
+import butterfly from '@/assets/icons/butterfly-green.png';
+import psicoestimulacion from '@/assets/icons/Psicoestimulacion-cognitiva.png';
+import estimulacionFisica from '@/assets/icons/Estimulacionfisica-motriz.png';
+import terapiaOcupacional from '@/assets/icons/Terapia-ocupacional.png';
+import socioAfectivo from '@/assets/icons/Fortalecimiento-socio-afectivo.png';
+import estimulacionSensorial from '@/assets/icons/Programas-de-multi-estimulacion-sensorial.png';
+import idiomas from '@/assets/icons/Idiomas.png';
+import salidasCulturales from '@/assets/icons/Salidas-culturales.png';
+import escuelaFamilias from '@/assets/icons/Escuela-de-familias.png';
+import Item from '@/components/Item';
 
 export default function Home() {
   return (
@@ -12,7 +28,118 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        
+        <div className='mt-23'>
+          <div className={`${styles.divImage} px-17.5 pt-12 pb-17.5`}>
+            <div
+              className={`max-w-[1480px] w-full flex justify-end ${styles.divInside}`}
+            >
+              <div className='flex w-full flex-col max-w-sm items-center'>
+                <h1 className='font-libreBaskerville text-3xl mb-4 w-fit text-center text-white'>
+                  Cámbiele el <br /> sentido a su vida
+                </h1>
+                <form className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
+                  <p className='font-libreBaskerville text-3xl text-white text-center'>
+                    Contactanos
+                  </p>
+                  <input
+                    type='text'
+                    className='h-[50px] rounded-[100px] px-4 font-libreBaskerville text-lb placeholder-aidamBlue text-aidamBlue outline-none'
+                    placeholder='Nombre y Apellido'
+                  />
+                  <input
+                    type='text'
+                    className='h-[50px] rounded-[100px] px-4 font-libreBaskerville text-lb placeholder-aidamBlue text-aidamBlue outline-none'
+                    placeholder='Teléfono'
+                  />
+                  <button
+                    type='submit'
+                    className='h-11 w-full flex items-center justify-center rounded-[100px] px-7 py-3 border border-white font-libreBaskerville font-medium text-ss text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue mb-5 transition-colors'
+                  >
+                    Enviar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div className='pt-[90px] pb-[60px] px-[30px] flex flex-col items-center'>
+            <div className='mx-[2.8%] max-w-4xl'>
+              <h2 className='font-libreBaskerville text-3xl text-aidamBlue mt-4 mb-2.5 text-center'>
+                ¿Por qué elegir AIDAM?
+              </h2>
+              <p className='text-center font-quickSand text-lz text-aidamBlue'>
+                Somos el único centro de día especializado en discapacidad con
+                un programa general de multiestimulación.
+              </p>
+              <div className='flex justify-center mt-5'>
+                <button
+                  type='submit'
+                  className='h-14 w-48 text-center rounded-md px-7 py-3 border border-white font-openSans font-semibold text-lg text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'
+                >
+                  CONOCENOS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col px-[2%] py-[5%] smMax:pb-16 bg-aidamBlue text-white'>
+            <div className='max-w-xl self-center text-center mb-10'>
+              <p className='font-quickSand text-lz'>
+                Te invitamos a que recorras nuestros espacios donde buscamos
+                prevenir, rehabilitar, estimular y fortalecer las áreas que
+                determinan una mejor calidad de vida.
+              </p>
+            </div>
+            <div className='flex smMax:flex-col ml:flex-row ml:justify-center gap-8 items-center w-full px-8'>
+              {useMediaQuery(640) ? (
+                <>
+                  <FlipCard title='Modelo Aidam' />
+                  <FlipCard title='Conocenos' />
+                  <FlipCard title='Servicio terapéutico' />
+                  <FlipCard title='Nuestro Equipo' />
+                </>
+                ) : null}
+              {useMediaQuery(830) ? (
+                <div className={`${styles.divMl} w-full flex flex-col gap-8`}>
+                  <div className={`flex gap-8 w-full`}>
+                    <FlipCard title='Modelo Aidam' />
+                    <FlipCard title='Conocenos' />
+                  </div>
+                  <div className={`flex gap-8 w-full`}>
+                    <FlipCard title='Servicio terapéutico' />
+                    <FlipCard title='Nuestro Equipo' />
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <FlipCard title='Modelo Aidam' />
+                  <FlipCard title='Conocenos' />
+                  <FlipCard title='Servicio terapéutico' />
+                  <FlipCard title='Nuestro Equipo' />
+                </>
+              )}
+            </div>
+          </div>
+          <div className='flex justify-center py-[100px]'>
+            <div className='w-full max-w-7xl flex flex-col'>
+              <div className='w-full max-w-4xl flex flex-col items-center self-center'>
+                <Image src={butterfly} alt='mariposa' className='mb-8' />
+                <h3 className='text-center font-libreBaskerville text-3xl text-aidamBlue mb-4'>Beneficios Aidam</h3>
+                <p className='text-center font-quickSand text-lz'>Nuestros programas terapéuticos están diseñados y adaptados a cada concurrente y su realidad, el objetivo final es potenciar las capacidades remanentes reduciendo los riesgos de deterioro.</p>
+              </div>
+              <div className='mx-[2%] flex justify-around my-16'>
+                <Item icon={psicoestimulacion} title='Psicoestimulación cognitiva' />
+                <Item icon={estimulacionFisica} title='Estimulación física-motriz' />
+                <Item icon={terapiaOcupacional} title='Terapia ocupacional y reentrenamiento de las AVD' />
+                <Item icon={socioAfectivo} title='Fortalecimiento socio afectivo' />
+              </div>
+              <div className='mx-[2%] flex justify-around mb-8'>
+                <Item icon={estimulacionSensorial} title='Programas de multi estimulación sensorial' />
+                <Item icon={idiomas} title='Idiomas' />
+                <Item icon={salidasCulturales} title='Salidas culturales' />
+                <Item icon={escuelaFamilias} title='Escuela de familias' />
+              </div>
+            </div>
+          </div>
+        </div>
         <Faq />
         <MakeConsult />
         <Footer />
@@ -20,3 +147,6 @@ export default function Home() {
     </>
   );
 }
+
+('Imagen de <a href="https://www.freepik.es/foto-gratis/familia-disfrutando-tiempo-juntos_7871767.htm#query=grupo%20de%20personas%20sordas&position=4&from_view=search&track=ais">Freepik</a>');
+('Imagen de <a href="https://www.freepik.es/foto-gratis/nina-sindrome-down-pintando-colores_7088497.htm#query=asistente%20social%20con%20ni%C3%B1os&position=1&from_view=search&track=ais">Freepik</a>');

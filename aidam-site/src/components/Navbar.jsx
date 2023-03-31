@@ -27,7 +27,6 @@ const Navbar = () => {
         </div>
         {useMediaQuery(1024) ? (
           <>
-            {/* <div className=' w-1/2 bg-aidamBlue'></div> */}
             <div className={`${styles.container}`}>
               <button
                 className={`${styles.hamburger} ${open && styles.active}`}
@@ -41,19 +40,19 @@ const Navbar = () => {
           </>
         ) : (
           <div className='flex justify-around w-full !max-w-4xl items-center font-openSans text-lb text-white font-medium bg-aidamBlue'>
-            <Link href={''} className={`${styles.navbarButton}`}>
+            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               INICIO
             </Link>
-            <Link href={''} className={`${styles.navbarButton}`}>
-              CONÓCENOS
+            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
+              CONOCENOS
             </Link>
-            <Link href={''} className={`${styles.navbarButton}`}>
+            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               MODELO VITAL
             </Link>
-            <Link href={''} className={`${styles.navbarButton}`}>
+            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               SERVICIOS TERAPEUTICOS
             </Link>
-            <Link href={''} className={`${styles.navbarButton}`}>
+            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               CONTACTO
             </Link>
           </div>
@@ -78,7 +77,7 @@ const Navbar = () => {
                 MODELO VITAL
               </Link>
               <Link href={''} className=''>
-                SERVICIOS TERAPEUTICOS
+                SERVICIOS TERAPÉUTICOS
               </Link>
               <Link href={''} className=''>
                 CONTACTO

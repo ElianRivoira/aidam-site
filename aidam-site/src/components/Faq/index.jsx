@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import signoPregunta from '@/assets/icons/faq.png';
 import Question from './Question';
-import styles from '../../styles/Modelo-vital.module.css';
+import styles from '../../styles/Modelo-aidam.module.css';
 
 const questions = [
   {
