@@ -91,29 +91,29 @@ export default function Home() {
             <div className='flex smMax:flex-col ml:flex-row ml:justify-center gap-8 items-center w-full px-8'>
               {useMediaQuery(640) ? (
                 <>
-                  <FlipCard title='Modelo Aidam' />
-                  <FlipCard title='Conocenos' />
-                  <FlipCard title='Servicio terapéutico' />
-                  <FlipCard title='Nuestro Equipo' />
+                  <FlipCard title='Modelo Aidam' imgClass='img1' />
+                  <FlipCard title='Conocenos' imgClass='img2' />
+                  <FlipCard title='Servicio terapéutico' imgClass='img3' />
+                  <FlipCard title='Nuestro Equipo' imgClass='img4' />
                 </>
               ) : null}
               {useMediaQuery(830) ? (
                 <div className={`${styles.divMl} w-full flex flex-col gap-8`}>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Modelo Aidam' />
-                    <FlipCard title='Conocenos' />
+                    <FlipCard title='Modelo Aidam' imgClass='img1' />
+                    <FlipCard title='Conocenos' imgClass='img2' />
                   </div>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Servicio terapéutico' />
-                    <FlipCard title='Nuestro Equipo' />
+                    <FlipCard title='Servicio terapéutico' imgClass='img3' />
+                    <FlipCard title='Nuestro Equipo' imgClass='img4' />
                   </div>
                 </div>
               ) : (
                 <>
-                  <FlipCard title='Modelo Aidam' />
-                  <FlipCard title='Conocenos' />
-                  <FlipCard title='Servicio terapéutico' />
-                  <FlipCard title='Nuestro Equipo' />
+                  <FlipCard title='Modelo Aidam' imgClass='img1' />
+                  <FlipCard title='Conocenos' imgClass='img2' />
+                  <FlipCard title='Servicio terapéutico' imgClass='img3' />
+                  <FlipCard title='Nuestro Equipo' imgClass='img4' />
                 </>
               )}
             </div>
@@ -210,3 +210,4 @@ export default function Home() {
 
 ('Imagen de <a href="https://www.freepik.es/foto-gratis/familia-disfrutando-tiempo-juntos_7871767.htm#query=grupo%20de%20personas%20sordas&position=4&from_view=search&track=ais">Freepik</a>');
 ('Imagen de <a href="https://www.freepik.es/foto-gratis/nina-sindrome-down-pintando-colores_7088497.htm#query=asistente%20social%20con%20ni%C3%B1os&position=1&from_view=search&track=ais">Freepik</a>');
+('Imagen de <a href="https://www.freepik.es/foto-gratis/personas-mayores-escuela-clase_37446842.htm#query=personas%20reunidas%20en%20ambiente%20de%20trabajo&position=4&from_view=search&track=ais">Freepik</a>');

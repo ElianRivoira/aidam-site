@@ -142,8 +142,7 @@ const conocenos = () => {
                   />
                   <Item
                     icon={metodoAidam}
-                    title='Método
-                    Vital'
+                    title='Método Aidam'
                     text='Innovador y exclusivo método de abordaje que incluye 4 áreas de trabajo: Neurocognitiva, Fisicomotriz, Funcional (AVD) y Socioafectiva con múltiples programas y actividades diseñadas para cada concurrente de manera personalizada.'
                   />
                 </div>
@@ -155,8 +154,7 @@ const conocenos = () => {
                   />
                   <Item
                     icon={equipo}
-                    title='Equipo
-                    profesional'
+                    title='Equipo profesional'
                     text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio sino la mora continua de nuestros procesos terapéuticos.'
                   />
                 </div>
@@ -168,8 +166,7 @@ const conocenos = () => {
                   />
                   <Item
                     icon={centroadaptado}
-                    title='Centro
-adaptado'
+                    title='Centro adaptado'
                     text='Un lugar pensado para el adulto mayor, con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
                   />
                 </div>
@@ -184,8 +181,7 @@ adaptado'
                   />
                   <Item
                     icon={metodoAidam}
-                    title='Método
-                   Vital'
+                    title='Método Aidam'
                     text='Innovador y exclusivo método de abordaje que incluye 4 áreas de trabajo: Neurocognitiva, Fisicomotriz, Funcional (AVD) y Socioafectiva con múltiples programas y actividades diseñadas para cada concurrente de manera personalizada.'
                   />
                   <Item
@@ -197,8 +193,7 @@ adaptado'
                 <div className='mx-[2%] flex justify-around mb-8'>
                   <Item
                     icon={equipo}
-                    title='Equipo
-                   profesional'
+                    title='Equipo profesional'
                     text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio sino la mora continua de nuestros procesos terapéuticos.'
                   />
                   <Item
@@ -208,8 +203,7 @@ adaptado'
                   />
                   <Item
                     icon={centroadaptado}
-                    title='Centro
-adaptado'
+                    title='Centro adaptado'
                     text='Un lugar pensado para el adulto mayor, con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
                   />
                 </div>
@@ -217,7 +211,6 @@ adaptado'
             )}
           </div>
         </div>
-
         <Faq />
         <MakeConsult />
         <Footer />
