@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </div>
           <div className='flex flex-col px-[2%] py-[5%] smMax:pb-16 bg-aidamBlue text-white'>
-            <div className='max-w-xl self-center text-center mb-10'>
+            <div className='max-w-xl self-center text-center mb-10 px-3'>
               <p className='font-quickSand text-lz'>
                 Te invitamos a que recorras nuestros espacios donde buscamos
                 prevenir, rehabilitar, estimular y fortalecer las áreas que
@@ -96,7 +96,7 @@ export default function Home() {
                   <FlipCard title='Servicio terapéutico' />
                   <FlipCard title='Nuestro Equipo' />
                 </>
-                ) : null}
+              ) : null}
               {useMediaQuery(830) ? (
                 <div className={`${styles.divMl} w-full flex flex-col gap-8`}>
                   <div className={`flex gap-8 w-full`}>
@@ -118,25 +118,85 @@ export default function Home() {
               )}
             </div>
           </div>
-          <div className='flex justify-center py-[100px]'>
+          <div className='flex justify-center py-[100px] px-[5%]'>
             <div className='w-full max-w-7xl flex flex-col'>
               <div className='w-full max-w-4xl flex flex-col items-center self-center'>
                 <Image src={butterfly} alt='mariposa' className='mb-8' />
-                <h3 className='text-center font-libreBaskerville text-3xl text-aidamBlue mb-4'>Beneficios Aidam</h3>
-                <p className='text-center font-quickSand text-lz'>Nuestros programas terapéuticos están diseñados y adaptados a cada concurrente y su realidad, el objetivo final es potenciar las capacidades remanentes reduciendo los riesgos de deterioro.</p>
+                <h3 className='text-center font-libreBaskerville text-3xl text-aidamBlue mb-4'>
+                  Beneficios Aidam
+                </h3>
+                <p className='text-center font-quickSand text-lz'>
+                  Nuestros programas terapéuticos están diseñados y adaptados a
+                  cada concurrente y su realidad, el objetivo final es potenciar
+                  las capacidades remanentes reduciendo los riesgos de
+                  deterioro.
+                </p>
               </div>
-              <div className='mx-[2%] flex justify-around my-16'>
-                <Item icon={psicoestimulacion} title='Psicoestimulación cognitiva' />
-                <Item icon={estimulacionFisica} title='Estimulación física-motriz' />
-                <Item icon={terapiaOcupacional} title='Terapia ocupacional y reentrenamiento de las AVD' />
-                <Item icon={socioAfectivo} title='Fortalecimiento socio afectivo' />
-              </div>
-              <div className='mx-[2%] flex justify-around mb-8'>
-                <Item icon={estimulacionSensorial} title='Programas de multi estimulación sensorial' />
-                <Item icon={idiomas} title='Idiomas' />
-                <Item icon={salidasCulturales} title='Salidas culturales' />
-                <Item icon={escuelaFamilias} title='Escuela de familias' />
-              </div>
+              {useMediaQuery(768) ? (
+                <>
+                  <div className='flex gap-8 mx-[2%] justify-around my-16'>
+                    <Item
+                      icon={psicoestimulacion}
+                      title='Psicoestimulación cognitiva'
+                    />
+                    <Item
+                      icon={estimulacionFisica}
+                      title='Estimulación física-motriz'
+                    />
+                  </div>
+                  <div className='flex gap-8 mx-[2%] justify-around my-16'>
+                    <Item
+                      icon={terapiaOcupacional}
+                      title='Terapia ocupacional y reentrenamiento de las AVD'
+                    />
+                    <Item
+                      icon={socioAfectivo}
+                      title='Fortalecimiento socio afectivo'
+                    />
+                  </div>
+                  <div className='flex gap-8 mx-[2%] justify-around my-16'>
+                    <Item
+                      icon={estimulacionSensorial}
+                      title='Programas de multi estimulación sensorial'
+                    />
+                    <Item icon={idiomas} title='Idiomas' />
+                  </div>
+                  <div className='flex gap-8 mx-[2%] justify-around mb-8'>
+                    <Item icon={salidasCulturales} title='Salidas culturales' />
+                    <Item icon={escuelaFamilias} title='Escuela de familias' />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className='mx-[2%] flex justify-around my-16'>
+                    <Item
+                      icon={psicoestimulacion}
+                      title='Psicoestimulación cognitiva'
+                    />
+                    <Item
+                      icon={estimulacionFisica}
+                      title='Estimulación física-motriz'
+                    />
+                    <Item
+                      icon={terapiaOcupacional}
+                      title='Terapia ocupacional y reentrenamiento de las AVD'
+                    />
+                    <Item
+                      icon={socioAfectivo}
+                      title='Fortalecimiento socio afectivo'
+                    />
+                  </div>
+                  <div className='mx-[2%] flex justify-around mb-8'>
+                    <Item
+                      icon={estimulacionSensorial}
+                      title='Programas de multi estimulación sensorial'
+                    />
+                    <Item icon={idiomas} title='Idiomas' />
+                    <Item icon={salidasCulturales} title='Salidas culturales' />
+                    <Item icon={escuelaFamilias} title='Escuela de familias' />
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
