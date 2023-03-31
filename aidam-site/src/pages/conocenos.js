@@ -7,6 +7,7 @@ import styles from '../styles/Conocenos.module.css';
 import Faq from '@/components/Faq';
 import MakeConsult from '@/components/MakeConsult';
 import Footer from '@/components/Footer';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 import mariposa from '../assets/icons/mariposa.png';
 import vision from '../assets/icons/Vision.svg';
@@ -14,6 +15,14 @@ import mision from '../assets/icons/Mision.svg';
 import valores from '../assets/icons/Valores.svg';
 import imagenTutor from '../assets/images/tutor.jpg';
 import trabajoEquipo from '../assets/images/trabajoconjunto.jpg';
+import unidadesTP from '@/assets/icons/UnidadesTp.svg';
+import metodoAidam from '@/assets/icons/ModeloAidam.svg';
+import cerebrin from '@/assets/icons/cerebrin.svg';
+import equipo from '@/assets/icons/Equipo.svg';
+import atencionintegral from '@/assets/icons/atencionintegral.svg';
+import centroadaptado from '@/assets/icons/centroadaptado.svg';
+
+import Item from '@/components/Item';
 
 const conocenos = () => {
   return (
@@ -121,6 +130,94 @@ const conocenos = () => {
             <Image src={trabajoEquipo} className='w-[961px]' />
           </div>
         </div>
+        <div className='flex justify-center py-[100px] px-[5%]'>
+          <div className='w-full max-w-7xl'>
+            {useMediaQuery(768) ? (
+              <>
+                <div className='flex gap-8 mx-[2%] justify-around my-16'>
+                  <Item
+                    icon={unidadesTP}
+                    title='Unidades Terapéuticas diferenciadas'
+                    text='Grupos reducidos y determinados por grado de deterioro y dependencia. Optimizamos el trabajo profesional y garantizamos una óptima adaptación del concurrente.'
+                  />
+                  <Item
+                    icon={metodoAidam}
+                    title='Método
+                    Vital'
+                    text='Innovador y exclusivo método de abordaje que incluye 4 áreas de trabajo: Neurocognitiva, Fisicomotriz, Funcional (AVD) y Socioafectiva con múltiples programas y actividades diseñadas para cada concurrente de manera personalizada.'
+                  />
+                </div>
+                <div className='flex gap-8 mx-[2%] justify-around my-16'>
+                  <Item
+                    icon={cerebrin}
+                    title='Terapias y actividades con sentido'
+                    text='Programas desarrollados a medida teniendo en cuenta su historia de vida, gustos y deseos de los concurrentes.'
+                  />
+                  <Item
+                    icon={equipo}
+                    title='Equipo
+                    profesional'
+                    text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio sino la mora continua de nuestros procesos terapéuticos.'
+                  />
+                </div>
+                <div className='flex gap-8 mx-[2%] justify-around my-16'>
+                  <Item
+                    icon={atencionintegral}
+                    title='Atención integral centrada en la persona'
+                    text='Garantizamos la calidad en cada detalle de nuestros procesos terapéuticos centrándonos en las capacidades aún conservadas para potenciarlas y así lograr mantener la autonomía de nuestros concurrentes.'
+                  />
+                  <Item
+                    icon={centroadaptado}
+                    title='Centro
+adaptado'
+                    text='Un lugar pensado para el adulto mayor, con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <div className='mx-[2%] flex justify-around my-16'>
+                  <Item
+                    icon={unidadesTP}
+                    title='Unidades Terapéuticas diferenciadas'
+                    text='Grupos reducidos y determinados por grado de deterioro y dependencia. Optimizamos el trabajo profesional y garantizamos una óptima adaptación del concurrente.'
+                  />
+                  <Item
+                    icon={metodoAidam}
+                    title='Método
+                   Vital'
+                    text='Innovador y exclusivo método de abordaje que incluye 4 áreas de trabajo: Neurocognitiva, Fisicomotriz, Funcional (AVD) y Socioafectiva con múltiples programas y actividades diseñadas para cada concurrente de manera personalizada.'
+                  />
+                  <Item
+                    icon={cerebrin}
+                    title='Terapias y actividades con sentido'
+                    text='Programas desarrollados a medida teniendo en cuenta su historia de vida, gustos y deseos de los concurrentes.'
+                  />
+                </div>
+                <div className='mx-[2%] flex justify-around mb-8'>
+                  <Item
+                    icon={equipo}
+                    title='Equipo
+                   profesional'
+                    text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio sino la mora continua de nuestros procesos terapéuticos.'
+                  />
+                  <Item
+                    icon={atencionintegral}
+                    title='Atención integral centrada en la persona'
+                    text='Garantizamos la calidad en cada detalle de nuestros procesos terapéuticos centrándonos en las capacidades aún conservadas para potenciarlas y así lograr mantener la autonomía de nuestros concurrentes.'
+                  />
+                  <Item
+                    icon={centroadaptado}
+                    title='Centro
+adaptado'
+                    text='Un lugar pensado para el adulto mayor, con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
+                  />
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+
         <Faq />
         <MakeConsult />
         <Footer />
