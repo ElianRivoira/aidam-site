@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 import Navbar from '@/components/Navbar';
-import styles from '../styles/Modelo-vital.module.css';
+import styles from '../styles/Modelo-aidam.module.css';
 import ninoPreescolar from '../assets/images/nino-edad-preescolar-masculino.jpg';
 import Faq from '@/components/Faq';
 import MakeConsult from '@/components/MakeConsult';

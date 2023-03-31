@@ -72,6 +72,8 @@ module.exports = {
       },
       screens: {
         'sd': '748px',
+        'ml': '830px',
+        'smMax': {'max': '640px'},
       },
     },
   },
