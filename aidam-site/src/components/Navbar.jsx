@@ -11,8 +11,8 @@ const Navbar = () => {
   // smooth transition to white background pending
   return (
     <nav className={`pl-8 ${styles.gradient} h-[93px] flex justify-center fixed z-10 top-0 w-full`}>
-      <div className='max-w-7xl w-full flex h-full justify-between'>
-        <div className='flex !w-2/3'>
+      <div className='max-w-[1480px] w-full flex h-full justify-between'>
+        <div className='flex mdMax:!w-[70%] lgMax:w-2/3 w-1/3 xd:w-1/2'>
           <div className='flex items-center relative lg:!w-[197px]'>
             <Image src={aidam} alt='aidam' height={70} className='' />
           </div>
@@ -20,12 +20,12 @@ const Navbar = () => {
             <div className={`${styles.triangleBottom}`}></div>
             <div className={`${styles.triangleTop}`}></div>
           </div>
-          <div className='lg:w-[45%] w-0 bg-aidamBlue'></div>
-          {useMediaQuery(1024) ? (
-            <div className=' w-1/2 bg-aidamBlue'></div>
+          <div className='xb:w-[20%] xc:w-[40%] xd:w-[50%] w-0 bg-aidamBlue'></div>
+          {useMediaQuery(1100) ? (
+            <div className='mdMax:w-1/3 w-1/2 bg-aidamBlue'></div>
           ) : null}
         </div>
-        {useMediaQuery(1024) ? (
+        {useMediaQuery(1100) ? (
           <>
             <div className={`${styles.container}`}>
               <button
@@ -39,15 +39,17 @@ const Navbar = () => {
             </div>
           </>
         ) : (
-          <div className='flex justify-around w-full !max-w-4xl items-center font-openSans text-lb text-white font-medium bg-aidamBlue'>
+          <div className='flex justify-around !w-full !max-w-4xl items-center font-openSans text-lb text-white font-medium bg-aidamBlue'>
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               INICIO
             </Link>
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               CONOCENOS
             </Link>
-
-            <Link href={''} className={`${styles.navbarButton}`}>
+            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
+              NUESTRO EQUIPO
+            </Link>
+            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               MODELO AIDAM
             </Link>
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
@@ -75,7 +77,10 @@ const Navbar = () => {
                 CONÓCENOS
               </Link>
               <Link href={''} className=''>
-                MODELO VITAL
+                NUESTRO EQUIPO
+              </Link>
+              <Link href={''} className=''>
+                MODELO AIDAM
               </Link>
               <Link href={''} className=''>
                 SERVICIOS TERAPÉUTICOS

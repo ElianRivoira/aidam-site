@@ -28,9 +28,6 @@ module.exports = {
         therapists: '#0B7EBE',
         redLogout: '#B81212',
       },
-      aspectRatio: {
-        'aidamImage': '961 / 850',
-      },
       fontSize: {
         sl: ['7px', '10px'],
         xm: ['11px', '14px'],
@@ -73,7 +70,12 @@ module.exports = {
       screens: {
         'sd': '748px',
         'ml': '830px',
+        'xb': '1230px',
+        'xc': '1315px',
+        'xd': '1390px',
         'smMax': {'max': '640px'},
+        'mdMax': {'max': '768px'},
+        'lgMax': {'max': '1100px'},
       },
     },
   },
