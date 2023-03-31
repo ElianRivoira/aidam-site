@@ -19,11 +19,11 @@ const Question = ({q, activeQuestion, handleQuestionClick, custom, clas}) => {
             <Image src={menos} alt='menos' />
           </div>
         ) : (
-          <div className={`flex ${custom ? useMediaQuery(640) ? 'p-1.5 w-6 h-6' : 'p-1 w-10 h-10' : 'p-1.5 w-6 h-6'} bg-aidamBlue rounded-full border hover:border-aidamHover hover:bg-aidamHover justify-center mr-4 min-w-0 flex-shrink-0`}>
+          <div className={`flex ${custom ? useMediaQuery(640) ? 'p-1.5 w-6 h-6' : 'p-1 w-10 h-10' : 'p-1.5 w-6 h-6'} bg-aidamBlue rounded-full border hover:border-aidamHover hover:bg-aidamHover justify-center mr-4 min-w-0 flex-shrink-0 transition-colors`}>
             <Image src={mas} alt='mas' />
           </div>
         )}
-        <h3 className={`font-normal text-lb ${custom ? useMediaQuery(883) ? 'font-openSans font-medium text-ln' : 'font-openSans font-medium text-xb' : 'font-libreBaskerville'} hover:text-aidamHover`}>
+        <h3 className={`font-normal text-lb ${custom ? useMediaQuery(883) ? 'font-openSans font-medium text-ln' : 'font-openSans font-medium text-xb' : 'font-libreBaskerville'} hover:text-aidamHover transition-colors`}>
           {q.question}
         </h3>
       </div>
