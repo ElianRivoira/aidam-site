@@ -48,7 +48,7 @@ const Navbar = () => {
               CONÓCENOS
             </Link>
             <Link href={''} className={`${styles.navbarButton}`}>
-              MODELO VITAL
+              MODELO AIDAM
             </Link>
             <Link href={''} className={`${styles.navbarButton}`}>
               SERVICIOS TERAPEUTICOS
