@@ -28,6 +28,9 @@ module.exports = {
         therapists: '#0B7EBE',
         redLogout: '#B81212',
       },
+      aspectRatio: {
+        'aidamImage': '961 / 850',
+      },
       fontSize: {
         sl: ['7px', '10px'],
         xm: ['11px', '14px'],

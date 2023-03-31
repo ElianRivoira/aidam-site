@@ -46,8 +46,9 @@ const Navbar = () => {
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               CONOCENOS
             </Link>
-            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
-              MODELO VITAL
+
+            <Link href={''} className={`${styles.navbarButton}`}>
+              MODELO AIDAM
             </Link>
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               SERVICIOS TERAPEUTICOS
