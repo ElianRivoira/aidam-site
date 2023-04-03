@@ -63,7 +63,7 @@ const Navbar = () => {
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               SERVICIOS TERAPEUTICOS
             </Link>
-            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
+            <Link href={'/contact'} className={`${styles.navbarButton} transition-colors ${path === '/contact' ? styles.activeSite : null}`}>
               CONTACTO
             </Link>
           </div>
