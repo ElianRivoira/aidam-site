@@ -1,23 +1,12 @@
 import Image from 'next/image';
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 import consult from '../assets/icons/consult.png';
 import styles from '../styles/MakeConsult.module.css';
+import { sendEmail } from '@/services/sendEmail';
 
 const MakeConsult = () => {
   const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_1iyoqgf', 'template_winip2j', form.current, 'zc5yQiZMitv3PsWY_')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
 
   return (
     <div className={`px-8 py-17.5 ${styles.bgimage} sm:flex sm:justify-between`}>
@@ -27,7 +16,7 @@ const MakeConsult = () => {
           Realiza tu consulta
         </h2>
       </div>
-      <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-5 font-quickSand sm:w-1/2'>
+      <form ref={form} onSubmit={(e) => sendEmail(e, 'template_winip2j', form)} className='flex flex-col gap-5 font-quickSand sm:w-1/2'>
         <input type='text' name='name' className='h-12 border border-grey2 text-grey6 text-lb rounded-md px-4 outline-none focus:border-grey6' placeholder='Nombre y Apellido*' />
         <input type='tel' name='phone' className='h-12 border border-grey2 text-grey6 text-lb rounded-md px-4 outline-none focus:border-grey6' placeholder='Teléfono*'/>
         <input type='email' name='email' className='h-12 border border-grey2 text-grey6 text-lb rounded-md px-4 outline-none focus:border-grey6' placeholder='Email*'/>

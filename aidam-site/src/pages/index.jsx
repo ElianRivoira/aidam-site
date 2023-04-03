@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -19,8 +19,11 @@ import idiomas from '@/assets/icons/Idiomas.png';
 import salidasCulturales from '@/assets/icons/Salidas-culturales.png';
 import escuelaFamilias from '@/assets/icons/Escuela-de-familias.png';
 import Item from '@/components/Item';
+import { sendEmail } from '@/services/sendEmail';
 
 export default function Home() {
+  const form = useRef();
+  
   return (
     <>
       <Head>
@@ -37,17 +40,19 @@ export default function Home() {
                 <h1 className='font-libreBaskerville text-3xl mb-4 w-fit text-center text-white'>
                   Cámbiele el <br /> sentido a su vida
                 </h1>
-                <form className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
+                <form ref={form} onSubmit={(e) => sendEmail(e, 'template_winip2j', form)} className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
                   <p className='font-libreBaskerville text-3xl text-white text-center'>
                     Contactanos
                   </p>
                   <input
                     type='text'
+                    name='name'
                     className='h-[50px] rounded-[100px] px-4 font-libreBaskerville text-lb placeholder-aidamBlue text-aidamBlue outline-none'
                     placeholder='Nombre y Apellido'
                   />
                   <input
-                    type='text'
+                    type='tel'
+                    name='phone'
                     className='h-[50px] rounded-[100px] px-4 font-libreBaskerville text-lb placeholder-aidamBlue text-aidamBlue outline-none'
                     placeholder='Teléfono'
                   />
