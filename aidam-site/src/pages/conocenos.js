@@ -40,9 +40,9 @@ const conocenos = () => {
           <Image src={mariposa} alt='mariposa' className='w-12 h-9 mb-4' />
 
           <p className='text-white font-quickSand text-center text-lz'>
-            Somos el único centro de día especializado en el adulto
+            Somos el único centro de día especializado en discapacidad
             <br></br>
-            mayor con un programa general de multiestimulación.
+            con un programa general de multiestimulación.
           </p>
         </div>
         <div className='flex flex-col justify-center items-center px-8 mb-20'>
@@ -60,7 +60,7 @@ const conocenos = () => {
                 </div>
                 <div className='text-center font-quickSand text-[18px]'>
                   Buscamos ser un agente social de cambio e innovación en el
-                  abordaje integral de la dependencia y el envejecimiento.
+                  abordaje integral de la persona con discapacidad.
                   Nuestra meta es liderar el proceso de cambio desde una
                   atención centrada en la enfermedad hacia la atención centrada
                   en la persona.
@@ -101,7 +101,7 @@ const conocenos = () => {
             </h1>
             <p className='text-center md:px-8 font-quickSand text-ln text-aidamBlue'>
               Desarrollamos un programa terapéutico individual que previene,
-              rehabilita y fortalece integralmente el proceso de envejecimiento
+              rehabilita y fortalece integralmente el proceso de deterioro
               garantizando una mejora sustancial en la calidad de vida del
               concurrente.
             </p>
