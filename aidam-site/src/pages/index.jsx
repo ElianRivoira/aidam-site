@@ -211,3 +211,6 @@ export default function Home() {
 ('Imagen de <a href="https://www.freepik.es/foto-gratis/familia-disfrutando-tiempo-juntos_7871767.htm#query=grupo%20de%20personas%20sordas&position=4&from_view=search&track=ais">Freepik</a>');
 ('Imagen de <a href="https://www.freepik.es/foto-gratis/nina-sindrome-down-pintando-colores_7088497.htm#query=asistente%20social%20con%20ni%C3%B1os&position=1&from_view=search&track=ais">Freepik</a>');
 ('Imagen de <a href="https://www.freepik.es/foto-gratis/personas-mayores-escuela-clase_37446842.htm#query=personas%20reunidas%20en%20ambiente%20de%20trabajo&position=4&from_view=search&track=ais">Freepik</a>');
+('Imagen de <a href="https://www.freepik.es/foto-gratis/companeros-trabajo-que-trabajan-oficina-ambiente-relajado_12751724.htm#query=personas%20reunidas%20en%20ambiente%20de%20trabajo&position=8&from_view=search&track=ais">Imagen de gpointstudio</a> en Freepik');
+('Imagen de <a href="https://www.freepik.es/foto-gratis/retrato-nina-juego_12243501.htm#page=2&query=kids&position=3&from_view=search&track=sph">Freepik</a>');
+('Imagen de <a href="https://www.freepik.es/foto-gratis/mujer-joven-hacer-terapia-habla-ninos_18683189.htm#query=equipo%20terapeutico%20para%20ni%C3%B1os&position=3&from_view=search&track=ais">Freepik</a>');

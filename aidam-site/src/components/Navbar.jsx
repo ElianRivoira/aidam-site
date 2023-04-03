@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import aidam from '@/assets/icons/aidamTexto.svg';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import styles from '@/styles/Navbar.module.css';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [path, setPath] = useState('');
+  const router = useRouter();
+
+  useEffect(() => {
+    setPath(router.asPath);
+  }, [])
+
   // smooth transition to white background pending
   return (
     <nav className={`pl-8 ${styles.gradient} h-[93px] flex justify-center fixed z-10 top-0 w-full`}>
@@ -40,16 +48,16 @@ const Navbar = () => {
           </>
         ) : (
           <div className='flex justify-around !w-full !max-w-4xl items-center font-openSans text-lb text-white font-medium bg-aidamBlue'>
-            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
+            <Link href={'/'} className={`${styles.navbarButton} transition-colors ${path === '/' ? styles.activeSite : null}`}>
               INICIO
             </Link>
-            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
+            <Link href={'/conocenos'} className={`${styles.navbarButton} transition-colors ${path === '/conocenos' ? styles.activeSite : null}`}>
               CONOCENOS
             </Link>
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
               NUESTRO EQUIPO
             </Link>
-            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
+            <Link href={'/modelo-aidam'} className={`${styles.navbarButton} transition-colors ${path === '/modelo-aidam' ? styles.activeSite : null}`}>
               MODELO AIDAM
             </Link>
             <Link href={''} className={`${styles.navbarButton} transition-colors`}>
@@ -70,16 +78,16 @@ const Navbar = () => {
           >
             <div className='h-[93px]'></div>
             <div className='flex flex-col justify-center items-center mt-10 font-openSans font-medium text-lb gap-10'>
-              <Link href={''} className=''>
+              <Link href={'/'} className=''>
                 INICIO
               </Link>
-              <Link href={''} className=''>
+              <Link href={'/conocenos'} className=''>
                 CONÓCENOS
               </Link>
               <Link href={''} className=''>
                 NUESTRO EQUIPO
               </Link>
-              <Link href={''} className=''>
+              <Link href={'/modelo-aidam'} className=''>
                 MODELO AIDAM
               </Link>
               <Link href={''} className=''>
