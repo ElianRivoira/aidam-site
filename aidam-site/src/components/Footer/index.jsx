@@ -8,7 +8,7 @@ import mail from '@/assets/icons/mail.svg';
 
 const Footer = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col mb-7'>
       <div className='md:flex md:flex-row flex flex-col justify-center items-center px-12 pt-12 pb-7'>
         <div className='md:mr-10 md:mb-0 mb-8'>
           <Image src={aidam} alt='aidam' />
