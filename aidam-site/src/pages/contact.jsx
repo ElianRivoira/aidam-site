@@ -9,7 +9,7 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>MODELO AIDAM - Centro Aidam</title>
+        <title>CONTACTO - Centro Aidam</title>
       </Head>
       <main className='min-h-screen'>
         <Navbar />
