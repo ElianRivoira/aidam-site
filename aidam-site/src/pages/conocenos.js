@@ -8,6 +8,7 @@ import Faq from '@/components/Faq';
 import MakeConsult from '@/components/MakeConsult';
 import Footer from '@/components/Footer';
 import useMediaQuery from '@/hooks/useMediaQuery';
+import Item from '@/components/Item';
 
 import mariposa from '../assets/icons/mariposa.png';
 import vision from '../assets/icons/Vision.svg';
@@ -21,8 +22,6 @@ import cerebrin from '@/assets/icons/cerebrin.svg';
 import equipo from '@/assets/icons/Equipo.svg';
 import atencionintegral from '@/assets/icons/atencionintegral.svg';
 import centroadaptado from '@/assets/icons/centroadaptado.svg';
-
-import Item from '@/components/Item';
 
 const conocenos = () => {
   return (
@@ -55,7 +54,7 @@ const conocenos = () => {
             </div>
             <div className='md:flex md:flex-row md:justify-center md:items-start flex flex-col items-center max-w-[936px] text-aidamBlue gap-8 md:gap-0'>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={vision} className='w-16 h-16 mb-2' />
+                <Image src={vision} alt='vision' className='w-16 h-16 mb-2' />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Visión
                 </div>
@@ -68,7 +67,7 @@ const conocenos = () => {
                 </div>
               </div>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={mision} className='w-16 h-16 mb-2' />
+                <Image src={mision} alt='mision' className='w-16 h-16 mb-2' />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Misión
                 </div>
@@ -80,7 +79,7 @@ const conocenos = () => {
                 </div>
               </div>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={valores} className='w-16 h-16 mb-2' />
+                <Image src={valores} alt='values' className='w-16 h-16 mb-2' />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Valores
                 </div>
@@ -127,7 +126,7 @@ const conocenos = () => {
           </div>
 
           <div className='md:w-1/2'>
-            <Image src={trabajoEquipo} className='w-[961px]' />
+            <Image src={trabajoEquipo} alt='teamWork' className='w-[961px]' />
           </div>
         </div>
         <div className='flex justify-center py-[100px] px-[5%]'>
