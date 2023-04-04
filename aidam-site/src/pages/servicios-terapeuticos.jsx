@@ -47,7 +47,7 @@ const serviciosTerapeuticos = () => {
         <ImgComponent
           img='centroDeDia'
           title='Centro de día'
-          posY={useMediaQuery(640) ? -500 : 800}
+          posY={useMediaQuery(450) ? 0 : 800}
         />
         <div className='px-8 py-[160px] flex flex-col items-center'>
           <div className='max-w-7xl flex flex-col items-center'>
@@ -103,7 +103,7 @@ const serviciosTerapeuticos = () => {
         <ImgComponent
           img='unidadDeMemoria'
           title='Unidad de memoria'
-          posY={useMediaQuery(640) ? 900 : 2000}
+          posY={useMediaQuery(450) ? 0 : 2000}
         />
         <div className='px-8 py-[5%] bg-aidamBlue flex justify-center'>
           <div className='max-w-4xl w-full'>
@@ -179,7 +179,7 @@ const serviciosTerapeuticos = () => {
         <ImgComponent
           img='servicios'
           title='Servicios'
-          posY={useMediaQuery(640) ? -100 : 300}
+          posY={useMediaQuery(450) ? 400 : 300}
         />
         <div className='px-8 py-[5%] bg-white flex justify-center'>
           <div className='max-w-4xl w-full flex flex-col items-center'>
@@ -218,7 +218,7 @@ const serviciosTerapeuticos = () => {
         <ImgComponent
           img='aidamHome'
           title='Aidam home'
-          posY={useMediaQuery(640) ? 2000 : 2200}
+          posY={useMediaQuery(450) ? 1000 : 2200}
         />
         <div className='px-8 py-[5%] bg-aidamBlue flex justify-center'>
           <div className='max-w-4xl w-full flex flex-col items-center'>
