@@ -36,7 +36,7 @@ const questions = [
   {
     id: 6,
     question: '¿Cómo es el ingreso a un centro de día?',
-    answer: 'El proceso se inicia con un primer contacto entre el potencial asistente y el equipo interdisciplinario a los fines de conocer en detalle sus necesidades. Una vez que se acuerda el modelo terapéutico más adecuado se procede a realizar la Valoración Gerontológica Integral (VGI) para determinar el Programa de Atención Integral (PAI) personalizado.',
+    answer: 'El proceso se inicia con un primer contacto entre el potencial asistente y el equipo interdisciplinario a los fines de conocer en detalle sus necesidades. Una vez que se acuerda el modelo terapéutico más adecuado se procede a realizar la Valoración Integral (VI) para determinar el Programa de Atención Integral (PAI) personalizado.',
   },
 ];
 

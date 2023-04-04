@@ -20,6 +20,7 @@ import salidasCulturales from '@/assets/icons/Salidas-culturales.png';
 import escuelaFamilias from '@/assets/icons/Escuela-de-familias.png';
 import Item from '@/components/Item';
 import { sendEmail } from '@/services/sendEmail';
+import Whatsapp from '@/components/WhatsappButton';
 
 export default function Home() {
   const form = useRef();
@@ -208,6 +209,7 @@ export default function Home() {
         <Faq />
         <MakeConsult />
         <Footer />
+        <Whatsapp />
       </main>
     </>
   );
