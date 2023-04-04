@@ -28,10 +28,10 @@ const Question = ({q, activeQuestion, handleQuestionClick, custom, clas}) => {
         </h3>
       </div>
       <p
-        className={`font-quickSand text-lg ${custom ? 'font-normal bg-aidamBlue text-white rounded-md px-3' : ''}`}
+        className={`font-quickSand text-lg ${custom ? 'font-normal bg-aidamBlue text-white rounded-md px-3' : null} ${q.id === activeQuestion ? 'py-5' : null}`}
         style={{
           maxHeight: q.id === activeQuestion ? '1000px' : '0',
-          transition: `max-height ${
+          transition: `all ${
             q.id === activeQuestion ? '0.5s' : '0.2s'
           } ease-in-out`,
           overflow: 'hidden',
