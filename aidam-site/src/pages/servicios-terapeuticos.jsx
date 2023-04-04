@@ -49,7 +49,7 @@ const serviciosTerapeuticos = () => {
           title='Centro de día'
           posY={useMediaQuery(450) ? 0 : 800}
         />
-        <div className='px-8 py-[160px] flex flex-col items-center'>
+        <div className='px-8 py-20 sm:py-[160px] flex flex-col items-center'>
           <div className='max-w-7xl flex flex-col items-center'>
             <div className='mb-10'>
               <h1 className='text-center font-libreBaskerville text-3xl text-aidamBlue'>
