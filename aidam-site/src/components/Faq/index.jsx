@@ -25,7 +25,7 @@ const questions = [
   },
   {
     id: 4,
-    question: '¿Qué se hace en un centro de día',
+    question: '¿Qué se hace en un centro de día?',
     answer: 'Desde el paradigma de la adultez saludable con enfoque multidisciplinar e integral se abordan 6 ejes generales para mejorar la calidad de vida de nuestros pacientes: prevención y promoción de la salud, estimulación y rehabilitación cognitiva, estimulación y rehabilitación físico-funcional, estimulación Psico-Socio-Emocional, actividades lúdico-recreativas y fortalecimiento familiar.',
   },
   {

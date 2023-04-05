@@ -27,22 +27,32 @@ const Footer = () => {
               <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 mb-2'>
                 <Image src={wsp} alt='wsp' />
               </div>
-              <p className='text-aidamBlue'>+54 9 2616 22-1750</p>
+              <p className='text-aidamBlue'>+54 9 261-333-3952</p>
             </div>
             <div className='flex'>
               <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 mb-2'>
                 <Image src={mail} alt='email' />
               </div>
-              <p className='text-aidamBlue'>aidam@edu.com.ar</p>
+              <a
+                href='mailto:aidamterapeutico@gmail.com'
+                className='text-aidamBlue'
+              >
+                aidamterapeutico@gmail.com
+              </a>
             </div>
             <div className='flex'>
               <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 flex-shrink-0 mb-6'>
                 <Image src={direccion} alt='adress' />
               </div>
-              <p className='text-aidamBlue'>Patricias Mendocinas 1433</p>
+              <p className='text-aidamBlue'>Montevideo 225, M5500 Mendoza</p>
             </div>
           </div>
-          <a href={'https://docs.google.com/forms/d/e/1FAIpQLScax3EpreJjVy4_7tpu470igG1kvj2Nbg2iSyZxRQGPZk_Xyg/viewform'} className='h-16 w-52 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'>
+          <a
+            href={
+              'https://docs.google.com/forms/d/e/1FAIpQLScax3EpreJjVy4_7tpu470igG1kvj2Nbg2iSyZxRQGPZk_Xyg/viewform'
+            }
+            className='h-16 w-52 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'
+          >
             TRABAJÁ CON NOSOTROS
           </a>
         </div>
