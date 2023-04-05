@@ -1,9 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 import MakeConsult from '@/components/MakeConsult';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhatsappButton from '@/components/WhatsappButton';
 
 const contact = () => {
   return (
@@ -19,12 +21,13 @@ const contact = () => {
             <h2 className='sm:mr-5 text-center font-libreBaskerville text-3xl text-white'>Trabajá con nosotros</h2>
           </div>
           <div className='w-1/2 smMax:w-full smMax:flex smMax:justify-center'>
-            <button className='h-11 ml-5 flex items-center rounded-md self-center px-7 py-3 border border-white font-openSans font-semibold text-ss text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'>
+            <a href={'https://docs.google.com/forms/d/e/1FAIpQLScax3EpreJjVy4_7tpu470igG1kvj2Nbg2iSyZxRQGPZk_Xyg/viewform'} className='h-11 ml-5 w-fit flex items-center rounded-md self-center px-7 py-3 border border-white font-openSans font-semibold text-ss text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'>
               Mandar Curriculum Vitae
-            </button>
+            </a>
           </div>
         </div>
         <Footer />
+        <WhatsappButton />
       </main>
     </>
   );
