@@ -41,7 +41,7 @@ export default function Home() {
                 <h1 className='font-libreBaskerville text-3xl mb-4 w-fit text-center text-white'>
                   Cámbiele el <br /> sentido a su vida
                 </h1>
-                <form ref={form} onSubmit={(e) => sendEmail(e, 'template_winip2j', form)} className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
+                <form ref={form} onSubmit={(e) => sendEmail(e, 'template_k7m1jwd', form)} className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
                   <p className='font-libreBaskerville text-3xl text-white text-center'>
                     Contactanos
                   </p>

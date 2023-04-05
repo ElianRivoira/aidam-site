@@ -20,7 +20,7 @@ const MakeConsult = ({ margin }) => {
       </div>
       <form
         ref={form}
-        onSubmit={e => sendEmail(e, 'template_winip2j', form)}
+        onSubmit={e => sendEmail(e, 'template_a6c7zmh', form)}
         className='flex flex-col gap-5 font-quickSand sm:w-1/2'
       >
         <input
