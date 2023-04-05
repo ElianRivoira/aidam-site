@@ -39,7 +39,7 @@ export default function Home() {
             >
               <div className='flex w-full flex-col max-w-sm items-center'>
                 <h1 className='font-libreBaskerville text-3xl mb-4 w-fit text-center text-white'>
-                  Cámbiele el <br /> sentido a su vida
+                  Cambiale el <br /> sentido a tu vida
                 </h1>
                 <form ref={form} onSubmit={(e) => sendEmail(e, 'template_k7m1jwd', form)} className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
                   <p className='font-libreBaskerville text-3xl text-white text-center'>
