@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link href={'/conocenos'} className={`${styles.navbarButton} transition-colors ${path === '/conocenos' ? styles.activeSite : null}`}>
               CONOCENOS
             </Link>
-            <Link href={''} className={`${styles.navbarButton} transition-colors`}>
+            <Link href={'/equipo'} className={`${styles.navbarButton} transition-colors ${path === '/equipo' ? styles.activeSite : null}`}>
               NUESTRO EQUIPO
             </Link>
             <Link href={'/modelo-aidam'} className={`${styles.navbarButton} transition-colors ${path === '/modelo-aidam' ? styles.activeSite : null}`}>

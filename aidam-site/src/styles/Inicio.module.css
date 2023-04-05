@@ -76,8 +76,9 @@
   background-position-x: 35%;
 }
 .img4 {
-  background-image: url('../assets/images/personas-mayores.jpg');
-  background-position-y: 76%; 
+  background-image: url('../assets/images/equipo.jpg');
+  background-position-y: 76%;
+  background-position-x: 40%;
 }
 
 .cardContainer:hover .front {
