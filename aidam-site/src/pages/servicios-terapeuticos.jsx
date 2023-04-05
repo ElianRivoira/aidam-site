@@ -14,6 +14,7 @@ import enfermeria from '@/assets/icons/enfermeria.png';
 import escuela from '@/assets/icons/escuela.png';
 import supervisionMedica from '@/assets/icons/supervision-medica.png';
 import supervisionNutricional from '@/assets/icons/supervision-nutricional.png';
+import WhatsappButton from '@/components/WhatsappButton';
 
 const serviciosTerapeuticos = () => {
   return (
@@ -353,6 +354,7 @@ const serviciosTerapeuticos = () => {
         <Faq />
         <MakeConsult />
         <Footer />
+        <WhatsappButton />
       </main>
     </>
   );

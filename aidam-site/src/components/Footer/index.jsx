@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
+
 import MapContainer from './MapContainer';
 import aidam from '@/assets/icons/aidamTexto.svg';
 import wsp from '@/assets/icons/wsp.svg';
@@ -40,9 +42,9 @@ const Footer = () => {
               <p className='text-aidamBlue'>Patricias Mendocinas 1433</p>
             </div>
           </div>
-          <button className='h-16 w-52 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'>
+          <a href={'https://docs.google.com/forms/d/e/1FAIpQLScax3EpreJjVy4_7tpu470igG1kvj2Nbg2iSyZxRQGPZk_Xyg/viewform'} className='h-16 w-52 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'>
             TRABAJÁ CON NOSOTROS
-          </button>
+          </a>
         </div>
       </div>
       <div className='md:flex self-center font-quickSand text-sm text-center'>

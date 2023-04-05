@@ -22,12 +22,13 @@ import cerebrin from '@/assets/icons/cerebrin.svg';
 import equipo from '@/assets/icons/Equipo.svg';
 import atencionintegral from '@/assets/icons/atencionintegral.svg';
 import centroadaptado from '@/assets/icons/centroadaptado.svg';
+import WhatsappButton from '@/components/WhatsappButton';
 
 const conocenos = () => {
   return (
     <>
       <Head>
-        <title>CONÓCENOS - Centro Aidam</title>
+        <title>CONOCENOS - Centro Aidam</title>
       </Head>
       <main className='min-h-screen'>
         <Navbar />
@@ -213,6 +214,7 @@ const conocenos = () => {
         <Faq />
         <MakeConsult />
         <Footer />
+        <WhatsappButton />
       </main>
     </>
   );

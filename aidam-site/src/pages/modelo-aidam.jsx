@@ -9,6 +9,7 @@ import Faq from '@/components/Faq';
 import MakeConsult from '@/components/MakeConsult';
 import Footer from '@/components/Footer';
 import useMediaQuery from '@/hooks/useMediaQuery';
+import WhatsappButton from '@/components/WhatsappButton';
 
 const modeloAidam = () => {
   return (
@@ -80,6 +81,7 @@ const modeloAidam = () => {
         <Faq />
         <MakeConsult />
         <Footer />
+        <WhatsappButton />
       </main>
     </>
   );

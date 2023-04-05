@@ -1,9 +1,12 @@
 import emailjs from '@emailjs/browser';
 
-export const sendEmail = (e, template, form) => {
+export const sendEmail = (e, template) => {
   e.preventDefault();
 
-  emailjs.sendForm('service_1iyoqgf', template, form.current, 'zc5yQiZMitv3PsWY_')
+  const serviceId = 'service_1iyoqgf'; // Id de servicio de emailJS
+  const userId = 'zc5yQiZMitv3PsWY_'; // Id de usuario de emailJS
+
+  emailjs.sendForm(serviceId, template, e.target, userId)
     .then((result) => {
         console.log(result.text);
     }, (error) => {
