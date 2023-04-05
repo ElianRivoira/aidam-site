@@ -23,6 +23,7 @@ import equipo from '@/assets/icons/Equipo.svg';
 import atencionintegral from '@/assets/icons/atencionintegral.svg';
 import centroadaptado from '@/assets/icons/centroadaptado.svg';
 import WhatsappButton from '@/components/WhatsappButton';
+import Link from 'next/link';
 
 const conocenos = () => {
   return (
@@ -106,9 +107,9 @@ const conocenos = () => {
               garantizando una mejora sustancial en la calidad de vida del
               concurrente.
             </p>
-            <button className='h-16 w-52 flex justify-center items-center text-base rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue'>
+            <Link href={'/modelo-aidam'} className='h-16 w-52 flex justify-center items-center text-base rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue'>
               Modelo Aidam
-            </button>
+            </Link>
           </div>
         </div>
         <div className='md:flex md:flex-row flex flex-col-reverse items-center w-full bg-aidamBlue'>

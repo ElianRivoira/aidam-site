@@ -21,6 +21,7 @@ import escuelaFamilias from '@/assets/icons/Escuela-de-familias.png';
 import Item from '@/components/Item';
 import { sendEmail } from '@/services/sendEmail';
 import WhatsappButton from '@/components/WhatsappButton';
+import Link from 'next/link';
 
 export default function Home() {
   const form = useRef();
@@ -77,12 +78,13 @@ export default function Home() {
                 un programa general de multiestimulación.
               </p>
               <div className='flex justify-center mt-5'>
-                <button
+                <Link
+                  href={'/conocenos'}
                   type='submit'
                   className='h-14 w-48 text-center rounded-md px-7 py-3 border border-white font-openSans font-semibold text-lg text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'
                 >
                   CONOCENOS
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -97,29 +99,29 @@ export default function Home() {
             <div className='flex smMax:flex-col ml:flex-row ml:justify-center gap-8 items-center w-full px-8'>
               {useMediaQuery(640) ? (
                 <>
-                  <FlipCard title='Modelo Aidam' imgClass='img1' />
-                  <FlipCard title='Conocenos' imgClass='img2' />
-                  <FlipCard title='Servicio terapéutico' imgClass='img3' />
-                  <FlipCard title='Nuestro Equipo' imgClass='img4' />
+                  <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
+                  <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
+                  <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
+                  <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
                 </>
               ) : null}
               {useMediaQuery(830) ? (
                 <div className={`${styles.divMl} w-full flex flex-col gap-8`}>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Modelo Aidam' imgClass='img1' />
-                    <FlipCard title='Conocenos' imgClass='img2' />
+                    <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
+                    <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
                   </div>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Servicio terapéutico' imgClass='img3' />
-                    <FlipCard title='Nuestro Equipo' imgClass='img4' />
+                    <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
+                    <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
                   </div>
                 </div>
               ) : (
                 <>
-                  <FlipCard title='Modelo Aidam' imgClass='img1' />
-                  <FlipCard title='Conocenos' imgClass='img2' />
-                  <FlipCard title='Servicio terapéutico' imgClass='img3' />
-                  <FlipCard title='Nuestro Equipo' imgClass='img4' />
+                  <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
+                  <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
+                  <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
+                  <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
                 </>
               )}
             </div>
