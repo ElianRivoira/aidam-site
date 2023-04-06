@@ -24,10 +24,15 @@ import WhatsappButton from '@/components/WhatsappButton';
 
 export default function Home() {
   const form = useRef();
-  
+
   return (
     <>
       <Head>
+        <meta name='description' content='AIDAM, Centro de día'></meta>
+        <meta
+          name='google-site-verification'
+          content='WtViZm6V8uqtMe03kNRJxT6s_XyY1uar528IF41wJR4'
+        />
         <title>Centro Aidam</title>
       </Head>
       <main>
@@ -41,7 +46,11 @@ export default function Home() {
                 <h1 className='font-libreBaskerville text-3xl mb-4 w-fit text-center text-white'>
                   Cámbiele el <br /> sentido a su vida
                 </h1>
-                <form ref={form} onSubmit={(e) => sendEmail(e, 'template_k7m1jwd', form)} className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
+                <form
+                  ref={form}
+                  onSubmit={(e) => sendEmail(e, 'template_k7m1jwd', form)}
+                  className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'
+                >
                   <p className='font-libreBaskerville text-3xl text-white text-center'>
                     Contactanos
                   </p>
