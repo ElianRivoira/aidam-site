@@ -33,7 +33,7 @@ export default function Home() {
           name='google-site-verification'
           content='WtViZm6V8uqtMe03kNRJxT6s_XyY1uar528IF41wJR4'
         />
-        <title>Centro Aidam</title>
+        <title>Centro Aidam - CENTRO DE DIA</title>
       </Head>
       <main>
         <Navbar />
