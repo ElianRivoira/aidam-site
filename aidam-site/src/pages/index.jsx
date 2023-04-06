@@ -25,10 +25,14 @@ import Link from 'next/link';
 
 export default function Home() {
   const form = useRef();
-  
+
   return (
     <>
       <Head>
+        <meta
+          name='google-site-verification'
+          content='WtViZm6V8uqtMe03kNRJxT6s_XyY1uar528IF41wJR4'
+        />
         <title>Centro Aidam</title>
       </Head>
       <main>
@@ -42,7 +46,11 @@ export default function Home() {
                 <h1 className='font-libreBaskerville text-3xl mb-4 w-fit text-center text-white'>
                   Cambiale el <br /> sentido a tu vida
                 </h1>
-                <form ref={form} onSubmit={(e) => sendEmail(e, 'template_k7m1jwd', form)} className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
+                <form
+                  ref={form}
+                  onSubmit={(e) => sendEmail(e, 'template_k7m1jwd', form)}
+                  className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'
+                >
                   <p className='font-libreBaskerville text-3xl text-white text-center'>
                     Contactanos
                   </p>
@@ -99,29 +107,77 @@ export default function Home() {
             <div className='flex smMax:flex-col ml:flex-row ml:justify-center gap-8 items-center w-full px-8'>
               {useMediaQuery(640) ? (
                 <>
-                  <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
-                  <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
-                  <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
-                  <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
+                  <FlipCard
+                    title='Modelo Aidam'
+                    imgClass='img1'
+                    link='/modelo-aidam'
+                  />
+                  <FlipCard
+                    title='Conocenos'
+                    imgClass='img2'
+                    link='/conocenos'
+                  />
+                  <FlipCard
+                    title='Servicio terapéutico'
+                    imgClass='img3'
+                    link='/servicios-terapeuticos'
+                  />
+                  <FlipCard
+                    title='Nuestro Equipo'
+                    imgClass='img4'
+                    link='/equipo'
+                  />
                 </>
               ) : null}
               {useMediaQuery(830) ? (
                 <div className={`${styles.divMl} w-full flex flex-col gap-8`}>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
-                    <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
+                    <FlipCard
+                      title='Modelo Aidam'
+                      imgClass='img1'
+                      link='/modelo-aidam'
+                    />
+                    <FlipCard
+                      title='Conocenos'
+                      imgClass='img2'
+                      link='/conocenos'
+                    />
                   </div>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
-                    <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
+                    <FlipCard
+                      title='Servicio terapéutico'
+                      imgClass='img3'
+                      link='/servicios-terapeuticos'
+                    />
+                    <FlipCard
+                      title='Nuestro Equipo'
+                      imgClass='img4'
+                      link='/equipo'
+                    />
                   </div>
                 </div>
               ) : (
                 <>
-                  <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
-                  <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
-                  <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
-                  <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
+                  <FlipCard
+                    title='Modelo Aidam'
+                    imgClass='img1'
+                    link='/modelo-aidam'
+                  />
+                  <FlipCard
+                    title='Conocenos'
+                    imgClass='img2'
+                    link='/conocenos'
+                  />
+                  <FlipCard
+                    title='Servicio terapéutico'
+                    imgClass='img3'
+                    link='/servicios-terapeuticos'
+                  />
+                  <FlipCard
+                    title='Nuestro Equipo'
+                    imgClass='img4'
+                    link='/equipo'
+                  />
                 </>
               )}
             </div>
