@@ -8,7 +8,7 @@ import wsp from '@/assets/icons/wsp.svg';
 import direccion from '@/assets/icons/direccion.svg';
 import mail from '@/assets/icons/mail.svg';
 
-const Footer = () => {
+const Footer = ({ imgAttributions }) => {
   return (
     <div className='flex flex-col mb-7'>
       <div className='md:flex md:flex-row flex flex-col justify-center items-center px-12 pt-12 pb-7'>
@@ -57,12 +57,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className='md:flex self-center font-quickSand text-sm text-center'>
+      <div className='md:flex md:w-full md:justify-center font-quickSand text-sm text-center px-4'>
         <p className='md:mr-1 text-aidamBlue'>
-          Copyright 2023 | AIDAM | Todos los derechos reservados |{' '}
+          Copyright 2023 | AIDAM | Todos los derechos reservados | Realizado por: <span className='text-[#70d1f4] font-semibold'>DiamondForge</span>
         </p>
-        <p className='md:mr-1 text-aidamBlue'>Realizado por:</p>
-        <p className='text-[#70d1f4] font-semibold'>DiamondForge</p>
       </div>
     </div>
   );

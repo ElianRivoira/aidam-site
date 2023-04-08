@@ -20,17 +20,17 @@ const Navbar = () => {
   return (
     <nav className={`pl-8 ${styles.gradient} h-[93px] flex justify-center fixed z-10 top-0 w-full`}>
       <div className='max-w-[1480px] w-full flex h-full justify-between'>
-        <div className='flex mdMax:!w-[70%] lgMax:w-2/3 w-1/3 xd:w-1/2'>
-          <div className='flex items-center relative lg:!w-[197px]'>
+        <div className='flex mdMax:!w-[70%] lgMax:w-2/3 h-full w-1/3 xd:w-1/2'>
+          <div className='flex items-center relative lg:!w-[197px] h-full'>
             <Image src={aidam} alt='aidam' height={70} className='' />
           </div>
-          <div className='flex flex-col'>
+          <div className='flex flex-col h-full'>
             <div className={`${styles.triangleBottom}`}></div>
             <div className={`${styles.triangleTop}`}></div>
           </div>
-          <div className='xb:w-[20%] xc:w-[40%] xd:w-[50%] w-0 bg-aidamBlue'></div>
+          <div className='xb:w-[20%] h-full xc:w-[40%] xd:w-[50%] w-0 bg-aidamBlue'></div>
           {useMediaQuery(1100) ? (
-            <div className='mdMax:w-1/3 w-1/2 bg-aidamBlue'></div>
+            <div className='mdMax:w-1/3 w-1/2 h-full bg-aidamBlue'></div>
           ) : null}
         </div>
         {useMediaQuery(1100) ? (
@@ -84,16 +84,16 @@ const Navbar = () => {
               <Link href={'/conocenos'} className=''>
                 CONÓCENOS
               </Link>
-              <Link href={''} className=''>
+              <Link href={'/equipo'} className=''>
                 NUESTRO EQUIPO
               </Link>
               <Link href={'/modelo-aidam'} className=''>
                 MODELO AIDAM
               </Link>
-              <Link href={''} className=''>
+              <Link href={'/servicios-terapeuticos'} className=''>
                 SERVICIOS TERAPÉUTICOS
               </Link>
-              <Link href={''} className=''>
+              <Link href={'/contact'} className=''>
                 CONTACTO
               </Link>
             </div>
