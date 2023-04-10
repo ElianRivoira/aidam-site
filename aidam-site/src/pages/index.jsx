@@ -33,6 +33,10 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta
+          name='google-site-verification'
+          content='WtViZm6V8uqtMe03kNRJxT6s_XyY1uar528IF41wJR4'
+        />
         <title>Centro Aidam</title>
       </Head>
       <main>
