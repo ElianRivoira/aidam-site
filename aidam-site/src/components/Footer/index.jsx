@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import Link from 'next/link';
 
 import MapContainer from './MapContainer';
 import aidam from '@/assets/icons/aidamTexto.svg';
 import wsp from '@/assets/icons/wsp.svg';
 import direccion from '@/assets/icons/direccion.svg';
 import mail from '@/assets/icons/mail.svg';
+import Spinner from '../Spinner';
 
 const Footer = ({ imgAttributions }) => {
   return (

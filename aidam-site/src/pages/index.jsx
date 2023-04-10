@@ -1,6 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Faq from '@/components/Faq';
 import Footer from '@/components/Footer';
@@ -21,11 +22,14 @@ import escuelaFamilias from '@/assets/icons/Escuela-de-familias.png';
 import Item from '@/components/Item';
 import { sendEmail } from '@/services/sendEmail';
 import WhatsappButton from '@/components/WhatsappButton';
-import Link from 'next/link';
+import Spinner from '@/components/Spinner';
 
 export default function Home() {
   const form = useRef();
-  
+  const [loading, setLoading] = useState(true);
+
+  const handleLoad = () => setLoading(false);
+
   return (
     <>
       <Head>
@@ -34,7 +38,7 @@ export default function Home() {
       <main>
         <Navbar />
         <div className='mt-23'>
-          <div className={`${styles.divImage} px-17.5 pt-12 pb-17.5`}>
+          <div className={`${styles.divImage} px-17.5 pt-12 pb-17.5 relative`}>
             <div
               className={`max-w-[1480px] w-full flex justify-end ${styles.divInside}`}
             >
@@ -42,7 +46,11 @@ export default function Home() {
                 <h1 className='font-libreBaskerville text-3xl mb-4 w-fit text-center text-white'>
                   Cambiale el <br /> sentido a tu vida
                 </h1>
-                <form ref={form} onSubmit={(e) => sendEmail(e, 'template_k7m1jwd', form)} className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'>
+                <form
+                  ref={form}
+                  onSubmit={e => sendEmail(e, 'template_k7m1jwd', form)}
+                  className='bg-aidamBlue/[.8] rounded-[44px] flex flex-col p-8 gap-5 w-full'
+                >
                   <p className='font-libreBaskerville text-3xl text-white text-center'>
                     Contactanos
                   </p>
@@ -99,29 +107,77 @@ export default function Home() {
             <div className='flex smMax:flex-col ml:flex-row ml:justify-center gap-8 items-center w-full px-8'>
               {useMediaQuery(640) ? (
                 <>
-                  <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
-                  <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
-                  <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
-                  <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
+                  <FlipCard
+                    title='Modelo Aidam'
+                    imgClass='img1'
+                    link='/modelo-aidam'
+                  />
+                  <FlipCard
+                    title='Conocenos'
+                    imgClass='img2'
+                    link='/conocenos'
+                  />
+                  <FlipCard
+                    title='Servicio terapéutico'
+                    imgClass='img3'
+                    link='/servicios-terapeuticos'
+                  />
+                  <FlipCard
+                    title='Nuestro Equipo'
+                    imgClass='img4'
+                    link='/equipo'
+                  />
                 </>
               ) : null}
               {useMediaQuery(830) ? (
                 <div className={`${styles.divMl} w-full flex flex-col gap-8`}>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
-                    <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
+                    <FlipCard
+                      title='Modelo Aidam'
+                      imgClass='img1'
+                      link='/modelo-aidam'
+                    />
+                    <FlipCard
+                      title='Conocenos'
+                      imgClass='img2'
+                      link='/conocenos'
+                    />
                   </div>
                   <div className={`flex gap-8 w-full`}>
-                    <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
-                    <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
+                    <FlipCard
+                      title='Servicio terapéutico'
+                      imgClass='img3'
+                      link='/servicios-terapeuticos'
+                    />
+                    <FlipCard
+                      title='Nuestro Equipo'
+                      imgClass='img4'
+                      link='/equipo'
+                    />
                   </div>
                 </div>
               ) : (
                 <>
-                  <FlipCard title='Modelo Aidam' imgClass='img1' link='/modelo-aidam' />
-                  <FlipCard title='Conocenos' imgClass='img2' link='/conocenos' />
-                  <FlipCard title='Servicio terapéutico' imgClass='img3' link='/servicios-terapeuticos' />
-                  <FlipCard title='Nuestro Equipo' imgClass='img4' link='/equipo' />
+                  <FlipCard
+                    title='Modelo Aidam'
+                    imgClass='img1'
+                    link='/modelo-aidam'
+                  />
+                  <FlipCard
+                    title='Conocenos'
+                    imgClass='img2'
+                    link='/conocenos'
+                  />
+                  <FlipCard
+                    title='Servicio terapéutico'
+                    imgClass='img3'
+                    link='/servicios-terapeuticos'
+                  />
+                  <FlipCard
+                    title='Nuestro Equipo'
+                    imgClass='img4'
+                    link='/equipo'
+                  />
                 </>
               )}
             </div>
@@ -129,7 +185,15 @@ export default function Home() {
           <div className='flex justify-center py-[100px] px-[5%]'>
             <div className='w-full max-w-7xl flex flex-col'>
               <div className='w-full max-w-4xl flex flex-col items-center self-center'>
-                <Image src={butterfly} alt='mariposa' className='mb-8' />
+                <div className='mb-8'>
+                  {loading && <Spinner />}
+                  <Image
+                    src={butterfly}
+                    alt='mariposa'
+                    className=''
+                    onLoadingComplete={handleLoad}
+                  />
+                </div>
                 <h3 className='text-center font-libreBaskerville text-3xl text-aidamBlue mb-4'>
                   Beneficios Aidam
                 </h3>

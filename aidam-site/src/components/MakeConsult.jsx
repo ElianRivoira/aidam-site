@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import consult from '../assets/icons/consult.png';
 import styles from '../styles/MakeConsult.module.css';
 import { sendEmail } from '@/services/sendEmail';
+import Spinner from '@/components/Spinner';
 
 const MakeConsult = ({ margin }) => {
   const form = useRef();
@@ -13,7 +14,14 @@ const MakeConsult = ({ margin }) => {
       className={`px-8 py-17.5 ${styles.bgimage} sm:flex sm:justify-between ${margin}`}
     >
       <div className='flex items-center mb-5 sm:w-1/2 sm:justify-center sd:mr-4'>
-        <Image src={consult} alt='consulta' height={45} />
+        <div className='mr-3'>
+          <Image
+            src={consult}
+            alt='consulta'
+            height={45}
+            fallback={<Spinner />}
+          />
+        </div>
         <h2 className='font-libreBaskerville text-grey3 text-3xl ml-2 sm:w-fit'>
           Realiza tu consulta
         </h2>
