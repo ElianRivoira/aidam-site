@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import MakeConsult from '@/components/MakeConsult';
 import styles from '../styles/Equipo.module.css';
 import PCard from '@/components/PCard';
-import { profesionales } from '@/utils/profesionales';
+
 
 const equipo = () => {
   const getCols = () => {
@@ -30,11 +30,11 @@ const equipo = () => {
         >
           Nuestro equipo
         </div>
-        <div className='flex flex-wrap justify-center items-center md:gap-20 gap-3 md:px-[14%] mt-16 mb-16'>
+        <div className='flex flex-wrap justify-center items-center md:gap-20 gap-3 md:px-[14%] my-16'>
           {profesionales
-            ? profesionales.map((profesional) => (
+            ? profesionales.map((profesional, index) => (
                 <div
-                  key={profesional.name}
+                  key={index}
                   className={`w-${100 / cols} md:mr-0`}
                 >
                   <PCard

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import WhatsappButton from '@/components/WhatsappButton';
 
-const modeloAidam = () => {
+const modeloAidam = ({ questions }) => {
   return (
     <>
       <Head>
@@ -89,45 +89,57 @@ const modeloAidam = () => {
 
 export default modeloAidam;
 
-const questions = [
-  {
-    id: 1,
-    question: 'Entrevista Inicial',
-    answer:
-      'Te escuchamos y elaboramos el perfil de ingreso de acuerdo a tus necesidades y deseos.',
-  },
-  {
-    id: 2,
-    question: 'Valoración profesional integral',
-    answer:
-      'Es realizado por cada uno de nuestros profesionales con el fin de elaborar un perfil individual, nos permite conocer en profundidad el estado general de nuestros asistentes en las dimensiones física, funcional, cognitiva y emocional. También su historia de vida, preferencias, deseos y expectativas en esta nueva etapa.',
-  },
-  {
-    id: 3,
-    question: 'Programa de atención personal',
-    answer: 'Elaboramos un camino terapéutico adaptado a la realidad de cada concurrente con objetivos concretos en cada área valorada.',
-  },
-  {
-    id: 4,
-    question: 'Unidades terapéuticas reducidas',
-    answer: 'Buscamos la mayor efectividad en nuestros abordajes por medio de un delicado proceso de selección y determinación de cada concurrente en su Unidad terapéutica de acuerdo al criterio de nuestros especialistas.',
-  },
-  {
-    id: 5,
-    question: 'Seguimiento permanente',
-    answer: 'Procuramos realizar un seguimiento constante de cada concurrente a fin de garantizar su confort y desarrollo pleno de sus capacidades en nuestro centro.',
-  },
-  {
-    id: 6,
-    question: 'Informe semestral',
-    answer: 'Cada área de trabajo es evaluada semestralmente mostrando su evolución y promoviendo el fortalecimiento del proceso terapéutico. Esto nos permite modificar, intensificar y/o rediseñar el programa individual.',
-  },
-  {
-    id: 7,
-    question: 'Mejora continua',
-    answer: 'Buscamos orientar los esfuerzos en desarrollar herramientas que mejoren continuamente nuestros procesos de atención y garanticen los máximos estándares de calidad.',
-  },
-];
+export async function getStaticProps() {
+  const questions = [
+    {
+      id: 1,
+      question: 'Entrevista Inicial',
+      answer:
+        'Te escuchamos y elaboramos el perfil de ingreso de acuerdo a tus necesidades y deseos.',
+    },
+    {
+      id: 2,
+      question: 'Valoración profesional integral',
+      answer:
+        'Es realizado por cada uno de nuestros profesionales con el fin de elaborar un perfil individual, nos permite conocer en profundidad el estado general de nuestros asistentes en las dimensiones física, funcional, cognitiva y emocional. También su historia de vida, preferencias, deseos y expectativas en esta nueva etapa.',
+    },
+    {
+      id: 3,
+      question: 'Programa de atención personal',
+      answer:
+        'Elaboramos un camino terapéutico adaptado a la realidad de cada concurrente con objetivos concretos en cada área valorada.',
+    },
+    {
+      id: 4,
+      question: 'Unidades terapéuticas reducidas',
+      answer:
+        'Buscamos la mayor efectividad en nuestros abordajes por medio de un delicado proceso de selección y determinación de cada concurrente en su Unidad terapéutica de acuerdo al criterio de nuestros especialistas.',
+    },
+    {
+      id: 5,
+      question: 'Seguimiento permanente',
+      answer:
+        'Procuramos realizar un seguimiento constante de cada concurrente a fin de garantizar su confort y desarrollo pleno de sus capacidades en nuestro centro.',
+    },
+    {
+      id: 6,
+      question: 'Informe semestral',
+      answer:
+        'Cada área de trabajo es evaluada semestralmente mostrando su evolución y promoviendo el fortalecimiento del proceso terapéutico. Esto nos permite modificar, intensificar y/o rediseñar el programa individual.',
+    },
+    {
+      id: 7,
+      question: 'Mejora continua',
+      answer:
+        'Buscamos orientar los esfuerzos en desarrollar herramientas que mejoren continuamente nuestros procesos de atención y garanticen los máximos estándares de calidad.',
+    },
+  ];
+  return {
+    props: {
+      questions,
+    },
+  };
+}
 
 ('Imagen de <a href="https://www.freepik.es/foto-gratis/retrato-nina-juego_12243501.htm#page=2&query=kids&position=3&from_view=search&track=sph">Freepik</a>');
 ('Imagen de <a href="https://www.freepik.es/foto-gratis/muchacho-bastante-joven-ropa-casual-pared-blanca-nino-edad-preescolar-masculino-caucasico-brillantes-emociones-faciales-bolsa-almuerzo-infancia-expresion-diversion-parece-serio-sonador_14965387.htm?query=kids#from_view=detail_alsolike">Imagen de master1305</a> en Freepik');

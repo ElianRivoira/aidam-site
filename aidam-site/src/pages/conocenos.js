@@ -24,6 +24,7 @@ import atencionintegral from '@/assets/icons/atencionintegral.svg';
 import centroadaptado from '@/assets/icons/centroadaptado.svg';
 import WhatsappButton from '@/components/WhatsappButton';
 import Link from 'next/link';
+import Spinner from '@/components/Spinner';
 
 const conocenos = () => {
   return (
@@ -39,11 +40,11 @@ const conocenos = () => {
           ¿Quiénes somos?
         </div>
         <div className='flex flex-col bg-aidamBlue justify-center items-center px-8 pt-[10%] pb-[17%]'>
-          <Image src={mariposa} alt='mariposa' className='w-12 h-9 mb-4' />
+          <Image src={mariposa} alt='mariposa' className='w-12 h-9 mb-4' fallback={<Spinner />} />
 
           <p className='text-white font-quickSand text-center text-lz'>
             Somos el único centro de día especializado en discapacidad
-            <br></br>
+            <br />
             con un programa general de multiestimulación.
           </p>
         </div>
@@ -56,20 +57,19 @@ const conocenos = () => {
             </div>
             <div className='md:flex md:flex-row md:justify-center md:items-start flex flex-col items-center max-w-[936px] text-aidamBlue gap-8 md:gap-0'>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={vision} alt='vision' className='w-16 h-16 mb-2' />
+                <Image src={vision} alt='vision' className='w-16 h-16 mb-2' fallback={<Spinner />} />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Visión
                 </div>
                 <div className='text-center font-quickSand text-[18px]'>
                   Buscamos ser un agente social de cambio e innovación en el
-                  abordaje integral de la persona con discapacidad.
-                  Nuestra meta es liderar el proceso de cambio desde una
-                  atención centrada en la enfermedad hacia la atención centrada
-                  en la persona.
+                  abordaje integral de la persona con discapacidad. Nuestra meta
+                  es liderar el proceso de cambio desde una atención centrada en
+                  la enfermedad hacia la atención centrada en la persona.
                 </div>
               </div>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={mision} alt='mision' className='w-16 h-16 mb-2' />
+                <Image src={mision} alt='mision' className='w-16 h-16 mb-2' fallback={<Spinner />} />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Misión
                 </div>
@@ -81,7 +81,7 @@ const conocenos = () => {
                 </div>
               </div>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={valores} alt='values' className='w-16 h-16 mb-2' />
+                <Image src={valores} alt='valores' className='w-16 h-16 mb-2' fallback={<Spinner />} />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Valores
                 </div>
@@ -95,7 +95,7 @@ const conocenos = () => {
         </div>
         <div className='md:flex md:flex-row flex flex-col items-center w-full gap-6 md:gap-0'>
           <div className='md:w-1/2'>
-            <Image src={imagenTutor} className='w-[961px]' />
+            <Image src={imagenTutor} className='w-[961px]' alt='tutor' fallback={<Spinner />} />
           </div>
           <div className='md:w-1/2 flex flex-col justify-center items-center gap-4 mb-8 md:mb-0'>
             <h1 className='font-libreBaskerville text-[30px] text-aidamBlue'>
@@ -107,7 +107,10 @@ const conocenos = () => {
               garantizando una mejora sustancial en la calidad de vida del
               concurrente.
             </p>
-            <Link href={'/modelo-aidam'} className='h-16 w-52 flex justify-center items-center text-base rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue'>
+            <Link
+              href={'/modelo-aidam'}
+              className='h-16 w-52 flex justify-center items-center text-base rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'
+            >
               Modelo Aidam
             </Link>
           </div>
@@ -128,7 +131,7 @@ const conocenos = () => {
           </div>
 
           <div className='md:w-1/2'>
-            <Image src={trabajoEquipo} alt='teamWork' className='w-[961px]' />
+            <Image src={trabajoEquipo} alt='teamWork' className='w-[961px]' fallback={<Spinner />} />
           </div>
         </div>
         <div className='flex justify-center py-[100px] px-[5%]'>
