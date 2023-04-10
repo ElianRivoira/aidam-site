@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import MakeConsult from '@/components/MakeConsult';
 import styles from '../styles/Equipo.module.css';
 import PCard from '@/components/PCard';
-
+import { profesionales } from '@/utils/profesionales';
 
 const equipo = () => {
   const getCols = () => {
