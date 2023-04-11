@@ -19,7 +19,7 @@ export default function Document() {
         <meta name="google-site-verification" content="uuqo9wq8zVwIzgnmxewoV41xt7RodXwVDaiym-h8JY8" />
         <meta name="title" property="og:title" content="Aidam" />
         <meta property="og:type" content="Article" />
-        <meta name="image" property="og:image" content="/aidamTexto.svg" />
+        <meta name="image" property="og:image" content="https://www.aidam.com.ar/_next/static/media/aidamTexto.e7b10c34.svg" />
         <meta name="description" property="og:description" content="Somos el único centro de día especializado en discapacidad con un programa general de multiestimulación." />
       </Head>
       <body>
