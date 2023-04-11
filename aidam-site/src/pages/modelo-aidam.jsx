@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
@@ -10,6 +10,7 @@ import MakeConsult from '@/components/MakeConsult';
 import Footer from '@/components/Footer';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import WhatsappButton from '@/components/WhatsappButton';
+import aidamLogo from '@/assets/icons/aidamLogo4k.svg';
 
 const modeloAidam = ({ questions }) => {
   return (
@@ -32,10 +33,9 @@ const modeloAidam = ({ questions }) => {
               ¿Cómo funciona nuestro modelo aidam?
             </h1>
             <p className='font-quickSand text-lz'>
-              Desarrollamos un modelo exclusivo de atención global que garantiza
-              a cada concurrente un programa individual adaptado a sus
-              necesidades y requerimientos, seguimiento profesional permanente y
-              la máxima contención para que pueda potenciar su proyecto de vida.
+              Desarrollamos un modelo exclusivo de atención interdisciplinario
+              adaptado a cada paciente con seguimiento de profesional
+              permanente.
             </p>
           </div>
         </div>
@@ -43,12 +43,12 @@ const modeloAidam = ({ questions }) => {
           {!useMediaQuery(1024) ? (
             <div className='ml-20 2xl:ml-44 flex'>
               <div
-                className={`rounded-full border-[35px] mb-3 sm:mb-0 border-aidamBlue h-[450px] w-[450px] overflow-hidden ${
+                className={`rounded-full border-[30px] mb-3 sm:mb-0 border-aidamBlue h-[450px] w-[450px] overflow-hidden ${
                   useMediaQuery(768) ? 'relative -left-20' : ''
                 } flex-shrink-0`}
               >
                 <Image
-                  src={ninoPreescolar}
+                  src={aidamLogo}
                   alt='imagen circular'
                   width={450}
                   className=''
@@ -66,7 +66,7 @@ const modeloAidam = ({ questions }) => {
                 } flex-shrink-0`}
               >
                 <Image
-                  src={ninoPreescolar}
+                  src={aidamLogo}
                   alt='imagen circular'
                   width={450}
                   className=''
@@ -78,7 +78,6 @@ const modeloAidam = ({ questions }) => {
             </>
           )}
         </div>
-        <Faq />
         <MakeConsult />
         <Footer />
         <WhatsappButton />

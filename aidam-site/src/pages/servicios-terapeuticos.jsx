@@ -35,22 +35,19 @@ const serviciosTerapeuticos = () => {
               Nuestros Servicios
             </h2>
             <p className='font-quickSand text-lz text-center mt-2 text-aidamBlue'>
-              Trabajamos en el desarrollo de alternativas de abordaje no
-              farmacológico que cubran todo el proceso de crecimiento. Nuestro
-              método Aidam busca la integración terapéutica con objetivos
-              preventivos y rehabilitadores que fortalezcan las capacidades
-              conservadas. Aplicamos la atención centrada en la persona (ACP) en
-              cada detalle de nuestras prestaciones garantizando la efectividad
-              de nuestros programas.
+              Trabajamos en el desarrollo de alternativas de abordaje que cubran
+              todos el proceso de crecimiento. Nuestro método Aidam busca la
+              integración terapéutica con objetivos preventivos y
+              rehabilitadores que fortalezcan las capacidades conservadas.
             </p>
           </div>
         </div>
         <ImgComponent
           img='centroDeDia'
-          title='Centro de día'
+          title=''
           posY={useMediaQuery(450) ? 0 : 800}
         />
-        <div className='px-8 py-20 sm:py-[160px] flex flex-col items-center'>
+        <div className='px-8 py-20 sm:py-[100px] flex flex-col items-center'>
           <div className='max-w-7xl flex flex-col items-center'>
             <div className='mb-10'>
               <h1 className='text-center font-libreBaskerville text-3xl text-aidamBlue'>
@@ -62,19 +59,19 @@ const serviciosTerapeuticos = () => {
                 <div className='flex'>
                   <Image src={dropRight} alt='item' className='mr-3' />{' '}
                   <span className='text-grey8 font-quickSand text-lb'>
-                    Estimulación y desarrollo preventivo.
+                    Abordaje a la atención temprana.
                   </span>
                 </div>
                 <div className='flex'>
                   <Image src={dropRight} alt='item' className='mr-3' />{' '}
                   <span className='text-grey8 font-quickSand text-lb'>
-                    Programa de actividades intergeneracionales.
+                    Apoyo a la inclusión.
                   </span>
                 </div>
                 <div className='flex'>
                   <Image src={dropRight} alt='item' className='mr-3' />{' '}
                   <span className='text-grey8 font-quickSand text-lb'>
-                    Entrenamiento cognitivo personalizado.
+                    Rehabilitación y terapias.
                   </span>
                 </div>
               </div>
@@ -82,31 +79,25 @@ const serviciosTerapeuticos = () => {
                 <div className='flex'>
                   <Image src={dropRight} alt='item' className='mr-3' />{' '}
                   <span className='text-grey8 font-quickSand text-lb'>
-                    Deterioro cognitivo leve.
+                    Centro de día.
                   </span>
                 </div>
                 <div className='flex'>
                   <Image src={dropRight} alt='item' className='mr-3' />{' '}
                   <span className='text-grey8 font-quickSand text-lb'>
-                    Programa de intervención multidisciplinaria.
-                  </span>
-                </div>
-                <div className='flex'>
-                  <Image src={dropRight} alt='item' className='mr-3' />{' '}
-                  <span className='text-grey8 font-quickSand text-lb'>
-                    Actividades de estimulación cognitiva.
+                    Acompañamiento al proceso de inclusión en educación.
                   </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <ImgComponent
+        {/* <ImgComponent
           img='unidadDeMemoria'
-          title='Unidad de memoria'
+          title=''
           posY={useMediaQuery(450) ? 0 : 2000}
-        />
-        <div className='px-8 py-[5%] bg-aidamBlue flex justify-center'>
+        /> */}
+        {/* <div className='px-8 py-[5%] bg-aidamBlue flex justify-center'>
           <div className='max-w-4xl w-full'>
             <p className='text-center text-white mb-10 font-quickSand text-lz'>
               Propuesta innovadora diseñada por nuestro Centro para todas
@@ -176,42 +167,53 @@ const serviciosTerapeuticos = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <ImgComponent
           img='servicios'
-          title='Servicios'
-          posY={useMediaQuery(450) ? 400 : 300}
+          title=''
+          posY={useMediaQuery(450) ? 400 : 0}
         />
-        <div className='px-8 py-[5%] bg-white flex justify-center'>
+        <div className='px-8 py-[5%] bg-aidamBlue flex justify-center'>
           <div className='max-w-4xl w-full flex flex-col items-center'>
-            <p className='text-center text-aidamBlue mb-10 font-quickSand text-lz'>
+            {/* <p className='text-center text-aidamBlue mb-10 font-quickSand text-lz'>
               Aquellas familias que optaron por una institución para su ser
               querido también pueden contar con los servicios de
               multiestimulación Aidam.
-            </p>
-            <div className='w-1/2 smMax:w-full rounded-[20px] p-5 bg-aidamBlue'>
-              <h2 className='text-white font-libreBaskerville text-3xl mb-3 text-center'>
-                Nuestro trabajo
+            </p> */}
+            <div className='w-1/2 smMax:w-full rounded-[20px] p-5 bg-white'>
+              <h2 className='text-aidamBlue font-libreBaskerville text-3xl mb-3 text-center'>
+                Servicios
               </h2>
-              <ul className='list-disc pl-10 text-white'>
+              <ul className='list-disc pl-10 text-aidamBlue'>
                 <li className='font-quickSand text-ln my-4'>
-                  Valoración sin costo.
+                  Valoración inicial.
                 </li>
                 <li className='font-quickSand text-ln my-4'>
                   Estimulación cognitiva.
                 </li>
                 <li className='font-quickSand text-ln my-4'>
-                  Terapia Ocupacional y entrenamiento de las AVD.
+                  Neuropsicología.
                 </li>
                 <li className='font-quickSand text-ln my-4'>
-                  Estimulación física y gimnasia.
+                  Terapia Ocupacional con integración sensorial.
                 </li>
                 <li className='font-quickSand text-ln my-4'>
-                  Programa terapéutico individual.
+                  Psicomotricidad.
                 </li>
+                <li className='font-quickSand text-ln my-4'>Gimnasia.</li>
+                <li className='font-quickSand text-ln my-4'>Fonoaudiología.</li>
                 <li className='font-quickSand text-ln my-4'>
-                  Informes periódicos de evolución.
+                  Terapia del lenguaje.
                 </li>
+                <li className='font-quickSand text-ln my-4'>Psicopedagogía.</li>
+                <li className='font-quickSand text-ln my-4'>
+                  Pedagogía terapéutica.
+                </li>
+                <li className='font-quickSand text-ln my-4'>Talleres.</li>
+                <li className='font-quickSand text-ln my-4'>Psiquiatría.</li>
+                <li className='font-quickSand text-ln my-4'>Fisiatría.</li>
+                <li className='font-quickSand text-ln my-4'>Pediatría.</li>
+                <li className='font-quickSand text-ln my-4'>Terapia visual.</li>
               </ul>
             </div>
           </div>
@@ -219,55 +221,52 @@ const serviciosTerapeuticos = () => {
         <ImgComponent
           img='aidamHome'
           title='Aidam home'
-          posY={useMediaQuery(450) ? 1000 : 2200}
+          posY={useMediaQuery(450) ? 1000 : 1600}
         />
-        <div className='px-8 py-[5%] bg-aidamBlue flex justify-center'>
+        <div className='px-8 py-[5%] bg-white flex justify-center'>
           <div className='max-w-4xl w-full flex flex-col items-center'>
-            <p className='text-center text-white mb-10 font-quickSand text-lz'>
-              Nos proponemos llevar lo mejor de nuestro servicio terapéutico a
-              la comodidad de su domicilio. El equipo Aidam trabaja en el diseño
-              de un programa personalizado e integral de multiestimulación bajo
-              los mismos estándares de excelencia que lo hacemos en nuestro
-              centro. Dependiendo las necesidades de cada concurrente podrá
-              incluir:
+            <p className='text-center text-aidamBlue mb-10 font-quickSand text-xb'>
+              Nos proponemos llevar a su domicilio lo mejor de nuestro servicio
+              terapéutico para lograr un trabajo interdisciplinario brindando
+              sugerencias, estrategias y adaptaciones.
             </p>
-            <div className='w-1/2 smMax:w-full rounded-[20px] p-5 bg-white'>
-              <h2 className='text-aidamBlue font-libreBaskerville text-3xl mb-3 text-center'>
+            {/* <div className='w-1/2 smMax:w-full rounded-[20px] p-5 bg-aidamBlue'>
+              <h2 className='text-white font-libreBaskerville text-3xl mb-3 text-center'>
                 Nuestro trabajo
               </h2>
-              <ul className='list-disc pl-10'>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+              <ul className='text-white list-disc pl-10'>
+                <li className='font-quickSand text-ln my-4'>
                   Valoración.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Estimulación cognitiva.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Terapia Ocupacional y entrenamiento de las AVD.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Adaptación del hogar.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Estimulación física y gimnasia.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Talleres de expresión.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Programa terapéutico individual.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Informes periódicos de evolución.
                 </li>
-                <li className='text-aidamBlue font-quickSand text-ln my-4'>
+                <li className='font-quickSand text-ln my-4'>
                   Asesoramiento familiar permanente.
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
-        <ImgComponent
+        {/* <ImgComponent
           img='otrosServicios'
           title='Otros servicios'
           posyY={1000}
@@ -350,8 +349,7 @@ const serviciosTerapeuticos = () => {
               </>
             )}
           </div>
-        </div>
-        <Faq />
+        </div> */}
         <MakeConsult />
         <Footer />
         <WhatsappButton />

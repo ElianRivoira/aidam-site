@@ -40,12 +40,17 @@ const conocenos = () => {
           ¿Quiénes somos?
         </div>
         <div className='flex flex-col bg-aidamBlue justify-center items-center px-8 pt-[10%] pb-[17%]'>
-          <Image src={mariposa} alt='mariposa' className='w-12 h-9 mb-4' fallback={<Spinner />} />
+          <Image
+            src={mariposa}
+            alt='mariposa'
+            className='w-12 h-9 mb-4'
+            fallback={<Spinner />}
+          />
 
           <p className='text-white font-quickSand text-center text-lz'>
-            Somos el único centro de día especializado en discapacidad
+            Somos un centro especializado en discapacidad
             <br />
-            con un programa general de multiestimulación.
+            con un programa de multiestimulación.
           </p>
         </div>
         <div className='flex flex-col justify-center items-center px-8 mb-20'>
@@ -57,7 +62,12 @@ const conocenos = () => {
             </div>
             <div className='md:flex md:flex-row md:justify-center md:items-start flex flex-col items-center max-w-[936px] text-aidamBlue gap-8 md:gap-0'>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={vision} alt='vision' className='w-16 h-16 mb-2' fallback={<Spinner />} />
+                <Image
+                  src={vision}
+                  alt='vision'
+                  className='w-16 h-16 mb-2'
+                  fallback={<Spinner />}
+                />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Visión
                 </div>
@@ -65,11 +75,16 @@ const conocenos = () => {
                   Buscamos ser un agente social de cambio e innovación en el
                   abordaje integral de la persona con discapacidad. Nuestra meta
                   es liderar el proceso de cambio desde una atención centrada en
-                  la enfermedad hacia la atención centrada en la persona.
+                  la discapacidad hacia la atención centrada en la persona.
                 </div>
               </div>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={mision} alt='mision' className='w-16 h-16 mb-2' fallback={<Spinner />} />
+                <Image
+                  src={mision}
+                  alt='mision'
+                  className='w-16 h-16 mb-2'
+                  fallback={<Spinner />}
+                />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Misión
                 </div>
@@ -81,13 +96,20 @@ const conocenos = () => {
                 </div>
               </div>
               <div className='flex flex-col items-center md:w-1/3 px-8'>
-                <Image src={valores} alt='valores' className='w-16 h-16 mb-2' fallback={<Spinner />} />
+                <Image
+                  src={valores}
+                  alt='valores'
+                  className='w-16 h-16 mb-2'
+                  fallback={<Spinner />}
+                />
                 <div className='font-libreBaskerville text-[26px] mb-2'>
                   Valores
                 </div>
-                <div className='text-center font-quickSand text-[18px]'>
+                <div className='font-quickSand text-[18px]'>
                   <li>Personalización.</li>
-                  <li>Profesionalismo</li>
+                  <li>Profesionalismo.</li>
+                  <li>Compromiso.</li>
+                  <li>Empatía.</li>
                 </div>
               </div>
             </div>
@@ -95,7 +117,12 @@ const conocenos = () => {
         </div>
         <div className='md:flex md:flex-row flex flex-col items-center w-full gap-6 md:gap-0'>
           <div className='md:w-1/2'>
-            <Image src={imagenTutor} className='w-[961px]' alt='tutor' fallback={<Spinner />} />
+            <Image
+              src={imagenTutor}
+              className='w-[961px]'
+              alt='tutor'
+              fallback={<Spinner />}
+            />
           </div>
           <div className='md:w-1/2 flex flex-col justify-center items-center gap-4 mb-8 md:mb-0'>
             <h1 className='font-libreBaskerville text-[30px] text-aidamBlue'>
@@ -103,9 +130,8 @@ const conocenos = () => {
             </h1>
             <p className='text-center md:px-8 font-quickSand text-ln text-aidamBlue'>
               Desarrollamos un programa terapéutico individual que previene,
-              rehabilita y fortalece integralmente el proceso de deterioro
-              garantizando una mejora sustancial en la calidad de vida del
-              concurrente.
+              interviene y fortalece el proceso garantizando una mejora
+              sustancial en la calidad de vida del paciente.
             </p>
             <Link
               href={'/modelo-aidam'}
@@ -131,7 +157,12 @@ const conocenos = () => {
           </div>
 
           <div className='md:w-1/2'>
-            <Image src={trabajoEquipo} alt='teamWork' className='w-[961px]' fallback={<Spinner />} />
+            <Image
+              src={trabajoEquipo}
+              alt='teamWork'
+              className='w-[961px]'
+              fallback={<Spinner />}
+            />
           </div>
         </div>
         <div className='flex justify-center py-[100px] px-[5%]'>
@@ -142,7 +173,7 @@ const conocenos = () => {
                   <Item
                     icon={unidadesTP}
                     title='Unidades Terapéuticas diferenciadas'
-                    text='Grupos reducidos y determinados por grado de deterioro y dependencia. Optimizamos el trabajo profesional y garantizamos una óptima adaptación del concurrente.'
+                    text='Grupos reducidos y determinados por capacidades.'
                   />
                   <Item
                     icon={metodoAidam}
@@ -159,19 +190,19 @@ const conocenos = () => {
                   <Item
                     icon={equipo}
                     title='Equipo profesional'
-                    text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio sino la mora continua de nuestros procesos terapéuticos.'
+                    text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio.'
                   />
                 </div>
                 <div className='flex gap-8 mx-[2%] justify-around my-16'>
                   <Item
                     icon={atencionintegral}
                     title='Atención integral centrada en la persona'
-                    text='Garantizamos la calidad en cada detalle de nuestros procesos terapéuticos centrándonos en las capacidades aún conservadas para potenciarlas y así lograr mantener la autonomía de nuestros concurrentes.'
+                    text='Garantizamos la calidad en cada detalle de nuestros procesos terapéuticos centrándonos en las capacidades.'
                   />
                   <Item
                     icon={centroadaptado}
                     title='Centro adaptado'
-                    text='Un lugar pensado para el adulto mayor, con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
+                    text='Un lugar con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
                   />
                 </div>
               </>
@@ -181,7 +212,7 @@ const conocenos = () => {
                   <Item
                     icon={unidadesTP}
                     title='Unidades Terapéuticas diferenciadas'
-                    text='Grupos reducidos y determinados por grado de deterioro y dependencia. Optimizamos el trabajo profesional y garantizamos una óptima adaptación del concurrente.'
+                    text='Grupos reducidos y determinados por capacidades.'
                   />
                   <Item
                     icon={metodoAidam}
@@ -198,24 +229,23 @@ const conocenos = () => {
                   <Item
                     icon={equipo}
                     title='Equipo profesional'
-                    text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio sino la mora continua de nuestros procesos terapéuticos.'
+                    text='Nuestros profesionales son seleccionados, formados y motivados para garantizar no solo la excelencia del servicio.'
                   />
                   <Item
                     icon={atencionintegral}
                     title='Atención integral centrada en la persona'
-                    text='Garantizamos la calidad en cada detalle de nuestros procesos terapéuticos centrándonos en las capacidades aún conservadas para potenciarlas y así lograr mantener la autonomía de nuestros concurrentes.'
+                    text='Garantizamos la calidad en cada detalle de nuestros procesos terapéuticos centrándonos en las capacidades.'
                   />
                   <Item
                     icon={centroadaptado}
                     title='Centro adaptado'
-                    text='Un lugar pensado para el adulto mayor, con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
+                    text='Un lugar con amplias salas, ambientes agradables y climatizados, baños adaptados, sin barrera arquitectónicas ni sujeciones y con todos los recursos necesario.'
                   />
                 </div>
               </>
             )}
           </div>
         </div>
-        <Faq />
         <MakeConsult />
         <Footer />
         <WhatsappButton />
