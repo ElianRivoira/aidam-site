@@ -16,7 +16,10 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@400;500;600&family=Quicksand&display=swap'
           rel='stylesheet'
         ></link>
-        <meta name='theme-color' content='#fff' />
+        <meta name="title" property="og:title" content="Aidam" />
+        <meta property="og:type" content="Article" />
+        <meta name="image" property="og:image" content="/aidamTexto.svg" />
+        <meta name="description" property="og:description" content="Somos el único centro de día especializado en discapacidad con un programa general de multiestimulación." />
       </Head>
       <body>
         <Main />
