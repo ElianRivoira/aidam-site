@@ -19,7 +19,7 @@ export default function Document() {
         <meta name="google-site-verification" content="uuqo9wq8zVwIzgnmxewoV41xt7RodXwVDaiym-h8JY8" />
         <meta name="title" property="og:title" content="Aidam" />
         <meta property="og:type" content="Article" />
-        <meta name="image" property="og:image" content="/aidamTexto(700px).png" />
+        <meta name="image" property="og:image" content="/aidamLogo4k.png" />
         <meta name="description" property="og:description" content="Somos un centro especializado en discapacidad con un programa de multiestimulación." />
       </Head>
       <body>
