@@ -1,5 +1,5 @@
+import React, { useRef, useState } from 'react';
 import Image from 'next/image';
-import React, { useRef } from 'react';
 
 import consult from '../assets/icons/consult.png';
 import styles from '../styles/MakeConsult.module.css';
@@ -8,6 +8,7 @@ import Spinner from '@/components/Spinner';
 
 const MakeConsult = ({ margin }) => {
   const form = useRef();
+  const [loading, setLoading] = useState(true);
 
   return (
     <div
@@ -15,11 +16,12 @@ const MakeConsult = ({ margin }) => {
     >
       <div className='flex items-center mb-5 sm:w-1/2 sm:justify-center sd:mr-4'>
         <div className='mr-3'>
+          {loading && <Spinner />}
           <Image
             src={consult}
             alt='consulta'
             height={45}
-            fallback={<Spinner />}
+            onLoadingComplete={() => setLoading(false)}
           />
         </div>
         <h2 className='font-libreBaskerville text-grey3 text-3xl ml-2 sm:w-fit'>

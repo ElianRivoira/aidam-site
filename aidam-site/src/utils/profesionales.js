@@ -244,6 +244,12 @@ export const profesionales = [
     photo: CBarbagallo,
   },
   {
+    name: 'Cecilia',
+    lastname: 'Parra',
+    profession: 'Terpeuta del lenguaje',
+    photo: CParra,
+  },
+  {
     name: 'Claudia',
     lastname: 'Lucero',
     profession: 'Lic. Atención temprana',
@@ -332,12 +338,6 @@ export const profesionales = [
     lastname: 'Ojeda',
     profession: 'Lic. Psicomotricidad',
     photo: COjeda,
-  },
-  {
-    name: 'Cecilia',
-    lastname: 'Parra',
-    profession: 'Terpeuta del lenguaje',
-    photo: CParra,
   },
   {
     name: 'Macarena',
