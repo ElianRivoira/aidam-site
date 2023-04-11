@@ -22,15 +22,15 @@ const Footer = ({ imgAttributions }) => {
           <div className='font-libreBaskerville text-lg text-aidamBlue mb-4'>
             CONTACTO
           </div>
-          <div className='flex flex-col'>
+          <div className='flex flex-col gap-2'>
             <div className='flex'>
-              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 mb-2'>
+              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5'>
                 <Image src={wsp} alt='wsp' />
               </div>
               <p className='text-aidamBlue'>+54 9 261-333-3952</p>
             </div>
             <div className='flex'>
-              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 mb-2'>
+              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5'>
                 <Image src={mail} alt='email' />
               </div>
               <a
@@ -41,17 +41,23 @@ const Footer = ({ imgAttributions }) => {
               </a>
             </div>
             <div className='flex'>
-              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 flex-shrink-0 mb-6'>
+              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 flex-shrink-0'>
                 <Image src={direccion} alt='adress' />
               </div>
               <p className='text-aidamBlue'>Montevideo 225, M5500 Mendoza</p>
+            </div>
+            <div className='flex'>
+              <div className='font-quickSand flex h-8 w-8 bg-aidamBlue rounded-full justify-center mr-1.5 flex-shrink-0'>
+                <Image src={direccion} alt='adress' />
+              </div>
+              <p className='text-aidamBlue'>Necochea 724, M5500 Mendoza</p>
             </div>
           </div>
           <a
             href={
               'https://docs.google.com/forms/d/e/1FAIpQLScax3EpreJjVy4_7tpu470igG1kvj2Nbg2iSyZxRQGPZk_Xyg/viewform'
             }
-            className='h-16 w-52 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'
+            className='h-16 w-52 mt-6 flex justify-center items-center text-sm rounded-md border border-white font-quickSand font-semibold text-white bg-aidamBlue hover:bg-white hover:border-aidamBlue hover:text-aidamBlue transition-colors'
           >
             TRABAJÁ CON NOSOTROS
           </a>

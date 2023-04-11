@@ -47,7 +47,6 @@ const equipo = () => {
               ))
             : ''}
         </div>
-        <Faq />
         <MakeConsult />
         <Footer />
       </main>

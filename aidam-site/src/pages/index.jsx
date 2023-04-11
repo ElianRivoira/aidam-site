@@ -16,7 +16,6 @@ import estimulacionFisica from '@/assets/icons/Estimulacionfisica-motriz.png';
 import terapiaOcupacional from '@/assets/icons/Terapia-ocupacional.png';
 import socioAfectivo from '@/assets/icons/Fortalecimiento-socio-afectivo.png';
 import estimulacionSensorial from '@/assets/icons/Programas-de-multi-estimulacion-sensorial.png';
-import idiomas from '@/assets/icons/Idiomas.png';
 import salidasCulturales from '@/assets/icons/Salidas-culturales.png';
 import escuelaFamilias from '@/assets/icons/Escuela-de-familias.png';
 import Item from '@/components/Item';
@@ -82,8 +81,8 @@ export default function Home() {
                 ¿Por qué elegir AIDAM?
               </h2>
               <p className='text-center font-quickSand text-lz text-aidamBlue'>
-                Somos el único centro de día especializado en discapacidad con
-                un programa general de multiestimulación.
+                Somos un centro especializado en discapacidad con
+                un programa de multiestimulación.
               </p>
               <div className='flex justify-center mt-5'>
                 <Link
@@ -219,7 +218,7 @@ export default function Home() {
                   <div className='flex gap-8 mx-[2%] justify-around my-16'>
                     <Item
                       icon={terapiaOcupacional}
-                      title='Terapia ocupacional y reentrenamiento de las AVD'
+                      title='Terapia ocupacional con integración sensorial'
                     />
                     <Item
                       icon={socioAfectivo}
@@ -231,7 +230,6 @@ export default function Home() {
                       icon={estimulacionSensorial}
                       title='Programas de multi estimulación sensorial'
                     />
-                    <Item icon={idiomas} title='Idiomas' />
                   </div>
                   <div className='flex gap-8 mx-[2%] justify-around mb-8'>
                     <Item icon={salidasCulturales} title='Salidas culturales' />
@@ -251,19 +249,18 @@ export default function Home() {
                     />
                     <Item
                       icon={terapiaOcupacional}
-                      title='Terapia ocupacional y reentrenamiento de las AVD'
+                      title='Terapia ocupacional con integración sensorial'
                     />
                     <Item
                       icon={socioAfectivo}
                       title='Fortalecimiento socio afectivo'
                     />
                   </div>
-                  <div className='mx-[2%] flex justify-around mb-8'>
+                  <div className='mx-[2%] flex justify-evenly mb-8'>
                     <Item
                       icon={estimulacionSensorial}
                       title='Programas de multi estimulación sensorial'
                     />
-                    <Item icon={idiomas} title='Idiomas' />
                     <Item icon={salidasCulturales} title='Salidas culturales' />
                     <Item icon={escuelaFamilias} title='Escuela de familias' />
                   </div>
@@ -272,7 +269,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Faq />
         <MakeConsult />
         <Footer />
         <WhatsappButton />

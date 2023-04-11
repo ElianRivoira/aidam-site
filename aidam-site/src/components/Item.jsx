@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 import Spinner from '@/components/Spinner';
+import iconAidam from '@/assets/icons/aidamLogo4k.svg'
 
 const Item = ({ icon, title, text }) => {
   const [loading, setLoading] = useState(true);
@@ -20,10 +21,11 @@ const Item = ({ icon, title, text }) => {
         <div>
           {loading && <Spinner />}
             <Image
-              src={icon}
+              src={iconAidam}
               alt={title}
               width={text ? 100 : 80}
               onLoadingComplete={() => setLoading(false)}
+              className='rounded-full shadow-xg'
             />
         </div>
         <h3 className='font-libreBaskerville text-lx text-aidamBlue w-fit text-center mt-4'>

@@ -20,7 +20,7 @@ const ImgComponent = ({img, title, posY}) => {
   return (
     <div
       className={`${styles[img]}`}
-      style={{ backgroundPositionY: -scrollY / 6 + posY }}
+      style={{ backgroundPositionY: (-(scrollY / 6) + posY) }}
     >
       <div
         className={`${styles.content} py-[10%] px-8 flex items-center justify-center`}
