@@ -20,7 +20,7 @@ export default function Document() {
         <meta name="title" property="og:title" content="Aidam" />
         <meta property="og:type" content="Article" />
         <meta name="image" property="og:image" content="/aidamTexto.png" />
-        <meta name="description" property="og:description" content="Somos el único centro de día especializado en discapacidad con un programa general de multiestimulación." />
+        <meta name="description" property="og:description" content="Somos un centro especializado en discapacidad con un programa de multiestimulación." />
       </Head>
       <body>
         <Main />
