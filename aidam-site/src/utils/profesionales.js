@@ -49,6 +49,8 @@ import MLeyes from '../assets/images/professionals/MLeyes.png';
 import MCoronel from '../assets/images/professionals/MCoronel.png';
 import JAbraham from '../assets/images/professionals/JAbraham.png';
 
+//test
+
 export const profesionales = [
   {
     name: 'M.Cecilia',
@@ -208,12 +210,6 @@ export const profesionales = [
     photo: PHerrera,
   },
   {
-    name: 'Valentina',
-    lastname: 'Moyano',
-    profession: 'Terapeuta del lenguaje',
-    photo: VMoyano,
-  },
-  {
     name: 'Alejandra',
     lastname: 'Cocco',
     profession: 'Terapeuta del lenguaje',
@@ -296,6 +292,12 @@ export const profesionales = [
     lastname: 'Montaruli',
     profession: 'Secretario',
     photo: LMontaruli,
+  },
+  {
+    name: 'Valentina',
+    lastname: 'Moyano',
+    profession: 'Terapeuta ocupacional',
+    photo: VMoyano,
   },
   {
     name: 'Lourdes',
