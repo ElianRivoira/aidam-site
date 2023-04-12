@@ -85,7 +85,7 @@ const serviciosTerapeuticos = () => {
                 <div className='flex'>
                   <Image src={dropRight} alt='item' className='mr-3' />{' '}
                   <span className='text-grey8 font-quickSand text-lb'>
-                    Acompañamiento al proceso de inclusión en educación.
+                    Acompañamiento al proceso de inclusión en educación común.
                   </span>
                 </div>
               </div>
@@ -213,6 +213,7 @@ const serviciosTerapeuticos = () => {
                 <li className='font-quickSand text-ln my-4'>Psiquiatría.</li>
                 <li className='font-quickSand text-ln my-4'>Fisiatría.</li>
                 <li className='font-quickSand text-ln my-4'>Pediatría.</li>
+                <li className='font-quickSand text-ln my-4'>Kinesiología.</li>
                 <li className='font-quickSand text-ln my-4'>Terapia visual.</li>
               </ul>
             </div>

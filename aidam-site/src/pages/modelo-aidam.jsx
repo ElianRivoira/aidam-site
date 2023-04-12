@@ -34,8 +34,7 @@ const modeloAidam = ({ questions }) => {
             </h1>
             <p className='font-quickSand text-lz'>
               Desarrollamos un modelo exclusivo de atención interdisciplinario
-              adaptado a cada paciente con seguimiento de profesional
-              permanente.
+              adaptado a cada paciente con seguimiento profesional permanente.
             </p>
           </div>
         </div>
