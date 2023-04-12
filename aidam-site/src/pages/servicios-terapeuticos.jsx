@@ -36,7 +36,7 @@ const serviciosTerapeuticos = () => {
             </h2>
             <p className='font-quickSand text-lz text-center mt-2 text-aidamBlue'>
               Trabajamos en el desarrollo de alternativas de abordaje que cubran
-              todos el proceso de crecimiento. Nuestro método Aidam busca la
+              todo el proceso de crecimiento. Nuestro método Aidam busca la
               integración terapéutica con objetivos preventivos y
               rehabilitadores que fortalezcan las capacidades conservadas.
             </p>
