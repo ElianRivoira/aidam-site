@@ -208,12 +208,6 @@ export const profesionales = [
     photo: PHerrera,
   },
   {
-    name: 'Valentina',
-    lastname: 'Moyano',
-    profession: 'Terapeuta del lenguaje',
-    photo: VMoyano,
-  },
-  {
     name: 'Alejandra',
     lastname: 'Cocco',
     profession: 'Terapeuta del lenguaje',
@@ -296,6 +290,12 @@ export const profesionales = [
     lastname: 'Montaruli',
     profession: 'Secretario',
     photo: LMontaruli,
+  },
+  {
+    name: 'Valentina',
+    lastname: 'Moyano',
+    profession: 'Terapeuta ocupacional',
+    photo: VMoyano,
   },
   {
     name: 'Lourdes',
