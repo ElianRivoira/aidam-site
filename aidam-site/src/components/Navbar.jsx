@@ -22,7 +22,9 @@ const Navbar = () => {
       <div className='max-w-[1480px] w-full flex h-full justify-between'>
         <div className='flex mdMax:!w-[70%] lgMax:w-2/3 h-full w-1/3 xd:w-1/2'>
           <div className='flex items-center relative lg:!w-[197px] h-full'>
-            <Image src={aidam} alt='aidam' height={70} className='' />
+            <Link href={'/'}>
+              <Image src={aidam} alt='aidam' height={70} className='' />
+            </Link>
           </div>
           <div className='flex flex-col h-full'>
             <div className={`${styles.triangleBottom}`}></div>
@@ -48,22 +50,22 @@ const Navbar = () => {
           </>
         ) : (
           <div className='flex justify-around !w-full !max-w-4xl items-center font-openSans text-lb text-white font-medium bg-aidamBlue'>
-            <Link href={'/'} className={`${styles.navbarButton} transition-colors ${path === '/' ? styles.activeSite : null}`}>
+            <Link href={'/'} className={`${styles.navbarButton} transition-colors ${path === '/' ? styles.activeSite : ''}`}>
               INICIO
             </Link>
-            <Link href={'/conocenos'} className={`${styles.navbarButton} transition-colors ${path === '/conocenos' ? styles.activeSite : null}`}>
+            <Link href={'/conocenos'} className={`${styles.navbarButton} transition-colors ${path === '/conocenos' ? styles.activeSite : ''}`}>
               CONOCENOS
             </Link>
-            <Link href={'/equipo'} className={`${styles.navbarButton} transition-colors ${path === '/equipo' ? styles.activeSite : null}`}>
+            <Link href={'/equipo'} className={`${styles.navbarButton} transition-colors ${path === '/equipo' ? styles.activeSite : ''}`}>
               NUESTRO EQUIPO
             </Link>
-            <Link href={'/modelo-aidam'} className={`${styles.navbarButton} transition-colors ${path === '/modelo-aidam' ? styles.activeSite : null}`}>
+            <Link href={'/modelo-aidam'} className={`${styles.navbarButton} transition-colors ${path === '/modelo-aidam' ? styles.activeSite : ''}`}>
               MODELO AIDAM
             </Link>
-            <Link href={'/servicios-terapeuticos'} className={`${styles.navbarButton} transition-colors ${path === '/servicios-terapeuticos' ? styles.activeSite : null}`}>
+            <Link href={'/servicios-terapeuticos'} className={`${styles.navbarButton} transition-colors ${path === '/servicios-terapeuticos' ? styles.activeSite : ''}`}>
               SERVICIOS TERAPEUTICOS
             </Link>
-            <Link href={'/contact'} className={`${styles.navbarButton} transition-colors ${path === '/contact' ? styles.activeSite : null}`}>
+            <Link href={'/contact'} className={`${styles.navbarButton} transition-colors ${path === '/contact' ? styles.activeSite : ''}`}>
               CONTACTO
             </Link>
           </div>
