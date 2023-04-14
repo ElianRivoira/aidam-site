@@ -4,7 +4,7 @@ import LHerrero from '../assets/images/professionals/LHerrero.png';
 import EBerra from '../assets/images/professionals/EBerra.png';
 import MAbraham from '../assets/images/professionals/MAbraham.png';
 import MSanJuan from '../assets/images/professionals/MSanJuan.png';
-import MMacca from '../assets/images/professionals/MMacca.png';
+import MFacca from '../assets/images/professionals/MFacca.png';
 import DRubert from '../assets/images/professionals/DRubert.png';
 import CArdito from '../assets/images/professionals/CArdito.png';
 import PHerrera from '../assets/images/professionals/PHerrera.png';
@@ -48,6 +48,10 @@ import CGonzalez from '../assets/images/professionals/CGonzalez.png';
 import MLeyes from '../assets/images/professionals/MLeyes.png';
 import MCoronel from '../assets/images/professionals/MCoronel.png';
 import JAbraham from '../assets/images/professionals/JAbraham.png';
+import DGrimma from '../assets/images/professionals/DGrimma.png';
+import JoMartinez from '../assets/images/professionals/JoMartinez.png';
+import LBelleli from '../assets/images/professionals/LBelleli.png';
+import SLarriba from '../assets/images/professionals/SLarriba.png';
 
 //test
 
@@ -77,6 +81,12 @@ export const profesionales = [
     photo: MCoronel,
   },
   {
+    name: 'Diego',
+    lastname: 'Grimma',
+    profession: 'Psicopedagogo',
+    photo: DGrimma,
+  },
+  {
     name: 'Lorena',
     lastname: 'Herrero',
     profession: 'Pedagoga terapeuta',
@@ -84,9 +94,9 @@ export const profesionales = [
   },
   {
     name: 'Micaela',
-    lastname: 'Macca',
+    lastname: 'Facca',
     profession: 'Pedagoga terapeuta',
-    photo: MMacca,
+    photo: MFacca,
   },
   {
     name: 'Nonthue',
@@ -135,6 +145,12 @@ export const profesionales = [
     lastname: 'Abraham',
     profession: 'Psicóloga',
     photo: MAbraham,
+  },
+  {
+    name: 'Sabrina',
+    lastname: 'Larriba',
+    profession: 'Psicóloga',
+    photo: SLarriba,
   },
   {
     name: 'Macarena',
@@ -276,6 +292,12 @@ export const profesionales = [
     photo: FCalderon,
   },
   {
+    name: 'Joha',
+    lastname: 'Martinez',
+    profession: 'Administradora',
+    photo: JoMartinez,
+  },
+  {
     name: 'Mariela',
     lastname: 'Olguín',
     profession: 'Secretaria',
@@ -286,6 +308,12 @@ export const profesionales = [
     lastname: 'Roman',
     profession: 'Secretaria',
     photo: LRoman,
+  },
+  {
+    name: 'Luca',
+    lastname: 'Belleli',
+    profession: 'Secretario',
+    photo: LBelleli,
   },
   {
     name: 'Leandro',
