@@ -52,8 +52,8 @@ import DGrimma from '../assets/images/professionals/DGrimma.png';
 import JoMartinez from '../assets/images/professionals/JoMartinez.png';
 import LBelleli from '../assets/images/professionals/LBelleli.png';
 import SLarriba from '../assets/images/professionals/SLarriba.png';
-
-//test
+import FSanguinez from '../assets/images/professionals/FSanguinez.png';
+import DFerrer from '../assets/images/professionals/DFerrer.png';
 
 export const profesionales = [
   {
@@ -81,10 +81,22 @@ export const profesionales = [
     photo: MCoronel,
   },
   {
+    name: 'Fernanda',
+    lastname: 'Sanguinez',
+    profession: 'Pediatra',
+    photo: FSanguinez,
+  },
+  {
     name: 'Diego',
     lastname: 'Grimma',
     profession: 'Psicopedagogo',
     photo: DGrimma,
+  },
+  {
+    name: 'Denny',
+    lastname: 'Ferrer',
+    profession: 'Psicopedagoga',
+    photo: DFerrer,
   },
   {
     name: 'Lorena',
