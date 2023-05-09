@@ -16,7 +16,7 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@400;500;600&family=Quicksand&display=swap'
           rel='stylesheet'
         ></link>
-        <meta name="google-site-verification" content="uuqo9wq8zVwIzgnmxewoV41xt7RodXwVDaiym-h8JY8" />
+        <meta name="google-site-verification" content="WtViZm6V8uqtMe03kNRJxT6s_XyY1uar528IF41wJR4" />
         <meta name="title" property="og:title" content="Aidam" />
         <meta property="og:type" content="Article" />
         <meta name="image" property="og:image" content="/aidamLogo4k.png" />
