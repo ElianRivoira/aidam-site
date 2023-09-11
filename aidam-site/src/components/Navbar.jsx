@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setPath(router.asPath);
-  }, [])
+  }, []);
 
   // smooth transition to white background pending
   return (
@@ -50,22 +50,47 @@ const Navbar = () => {
           </>
         ) : (
           <div className='flex justify-around !w-full !max-w-4xl items-center font-openSans text-lb text-white font-medium bg-aidamBlue'>
-            <Link href={'/'} className={`${styles.navbarButton} transition-colors ${path === '/' ? styles.activeSite : ''}`}>
+            <Link
+              href={'/'}
+              className={`${styles.navbarButton} transition-colors ${
+                path === '/' ? styles.activeSite : ''
+              }`}
+            >
               INICIO
             </Link>
-            <Link href={'/conocenos'} className={`${styles.navbarButton} transition-colors ${path === '/conocenos' ? styles.activeSite : ''}`}>
+            <Link
+              href={'/conocenos'}
+              className={`${styles.navbarButton} transition-colors ${
+                path === '/conocenos' ? styles.activeSite : ''
+              }`}
+            >
               CONOCENOS
             </Link>
-            <Link href={'/equipo'} className={`${styles.navbarButton} transition-colors ${path === '/equipo' ? styles.activeSite : ''}`}>
+            {/* <Link href={'/equipo'} className={`${styles.navbarButton} transition-colors ${path === '/equipo' ? styles.activeSite : ''}`}>
               NUESTRO EQUIPO
-            </Link>
-            <Link href={'/modelo-aidam'} className={`${styles.navbarButton} transition-colors ${path === '/modelo-aidam' ? styles.activeSite : ''}`}>
+            </Link> */}
+            <Link
+              href={'/modelo-aidam'}
+              className={`${styles.navbarButton} transition-colors ${
+                path === '/modelo-aidam' ? styles.activeSite : ''
+              }`}
+            >
               MODELO AIDAM
             </Link>
-            <Link href={'/servicios-terapeuticos'} className={`${styles.navbarButton} transition-colors ${path === '/servicios-terapeuticos' ? styles.activeSite : ''}`}>
+            <Link
+              href={'/servicios-terapeuticos'}
+              className={`${styles.navbarButton} transition-colors ${
+                path === '/servicios-terapeuticos' ? styles.activeSite : ''
+              }`}
+            >
               SERVICIOS TERAPEUTICOS
             </Link>
-            <Link href={'/contact'} className={`${styles.navbarButton} transition-colors ${path === '/contact' ? styles.activeSite : ''}`}>
+            <Link
+              href={'/contact'}
+              className={`${styles.navbarButton} transition-colors ${
+                path === '/contact' ? styles.activeSite : ''
+              }`}
+            >
               CONTACTO
             </Link>
           </div>
@@ -86,9 +111,9 @@ const Navbar = () => {
               <Link href={'/conocenos'} className=''>
                 CONÓCENOS
               </Link>
-              <Link href={'/equipo'} className=''>
+              {/* <Link href={'/equipo'} className=''>
                 NUESTRO EQUIPO
-              </Link>
+              </Link> */}
               <Link href={'/modelo-aidam'} className=''>
                 MODELO AIDAM
               </Link>
